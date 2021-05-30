@@ -3,15 +3,37 @@
 #include <string.h>
 #include <sys/wait.h>
 #include <unistd.h>
+#include <errno.h>
 
 #define MAX 50
 
 #define PIPE 1
 #define SEMICOLON 2
+#define UNIQUE_AND 3
+#define AND 4
+#define OR 5
+
+#define BACKGROUND 1
+
+int current_condition = 0;
+int background = 0;
 
 int count_characters(int type, char **argv)
 {
-    char character = (type == PIPE) ? '|' : ';';
+    char character;
+    switch (type)
+    {
+    case PIPE:
+        character = '|';
+        break;
+    case SEMICOLON:
+        character = ';';
+        break;
+    case UNIQUE_AND:
+        character = '&';
+        break;
+    }
+
     int count = 0, i = 0;
     while (argv[i])
     {
@@ -24,7 +46,20 @@ int count_characters(int type, char **argv)
 
 int get_char_pos(int type, int i, char **argv)
 {
-    char character = (type == PIPE) ? '|' : ';';
+    char character;
+    switch (type)
+    {
+    case PIPE:
+        character = '|';
+        break;
+    case SEMICOLON:
+        character = ';';
+        break;
+    case UNIQUE_AND:
+        character = '&';
+        break;
+    }
+
     while (argv[i])
     {
         if (*argv[i] == character)
@@ -34,6 +69,18 @@ int get_char_pos(int type, int i, char **argv)
     return -1;
 }
 
+int get_cond_char_pos(char **argv)
+{
+    int i = 0;
+    while (argv[i])
+    {
+        if ((argv[i][0] == '&' && argv[i][1] == '&') ||
+            (argv[i][0] == '|' && argv[i][1] == '|'))
+            return i;
+        i++;
+    }
+    return -1;
+}
 
 int exec_command(char **cmd)
 {
@@ -46,12 +93,21 @@ int exec_command(char **cmd)
             perror("execvp exec_command");
             return -1;
         }
+        return 0;
     }
     else if (pid > 0)
-    { // pai aguarda filho
-        waitpid(pid, NULL, 0);
+    { // pai aguarda filho se não for processo background
+        int status;
+        if (background != BACKGROUND)
+        {
+            waitpid(pid, &status, 0);
+        }
+        return WEXITSTATUS(status);
     }
-    return 1;
+    else
+    {
+        return -1;
+    }
 }
 
 int exec_command_pipes(char **argv, int n_pipes)
@@ -62,7 +118,7 @@ int exec_command_pipes(char **argv, int n_pipes)
     for (int j = 0; j <= n_pipes; j++)
     {
         n = get_char_pos(PIPE, i, argv);
-         char **cmd = &argv[i];
+        char **cmd = &argv[i];
         if (n != -1)
             cmd[n - i] = NULL;
 
@@ -105,41 +161,94 @@ int exec_command_pipes(char **argv, int n_pipes)
     return 1;
 }
 
+int exec_command_conditional(char **cmd, int pos)
+{
+    char **cond_cmd;
+    if (pos != -1)
+    {
+        cond_cmd = &cmd[pos + 1];
+        current_condition = (cmd[pos][0] == '&') ? AND : OR;
+        cmd[pos] = NULL;
+    }
+    else
+    {
+        current_condition = 0;
+    }
+
+    int res = exec_command(cmd);
+
+    if ((current_condition == AND && res == 0) ||
+        (current_condition == OR && res > 0))
+    {
+        //rodou o comando e prossegue pro condicional '&&'
+        //ou não rodou o comando e prossegue pro condicional '||'
+
+        printf("\n");
+        int pos = get_cond_char_pos(cond_cmd);
+        return exec_command_conditional(cond_cmd, pos);
+    }
+
+    return res;
+}
+
 int main(int argc, char **argv)
 {
     if (argc == 1)
     {
         printf("Uso: %s <comando1> <parametros> '|' ...  <comando N> <parametros> \n", argv[0]);
         printf("ou \n %s <comando1> <parametros> ... ';' <comando N> <parametros> \n", argv[0]);
+        printf("Para comandos condicionais utilize: \n");
+        printf("%s <comando1> <parametros> ... '&&' <comando N> <parametros> \n", argv[0]);
+        printf("ou \n %s <comando1> <parametros> ... '||' <comando N> <parametros> \n", argv[0]);
+        printf("E para executar um comando em background: \n");
+        printf("%s <comando1> <parametros> '&' \n", argv[0]);
         printf("Máximo 50 comandos. \n");
         return 0;
     }
 
+    errno = 0;
     char **command = &argv[1];
 
-    int n = count_characters(PIPE, command);
-
-    if (n == 0)
+    int pos = get_cond_char_pos(command);
+    if (pos > 0)
     {
-        n = count_characters(SEMICOLON, command);
-        if (n == 0) {
-            exec_command(command);
-        }
-        else {
-            int j = 0, p;
-            for (int i = 0; i <= n; i++) {
-                p = get_char_pos(SEMICOLON, j, command);
-                char **current_cmd = &command[j];
-                current_cmd[p-j] = NULL;
-                exec_command(current_cmd);
-                printf("\n\n");
-                j = p+1;
-            }
-        }
+        exec_command_conditional(command, pos);
     }
     else
     {
-        exec_command_pipes(command, n);
+        int n = count_characters(PIPE, command);
+        if (n > 0)
+        {
+            exec_command_pipes(command, n);
+        }
+        else
+        {
+            n = count_characters(SEMICOLON, command);
+            if (n == 0)
+            {
+                n = count_characters(UNIQUE_AND, command);
+                if (n > 0)
+                {
+                    background = BACKGROUND;
+                    pos = get_char_pos(UNIQUE_AND, 0, command);
+                    command[pos] = NULL;
+                }
+                exec_command(command);
+            }
+            else
+            {
+                int j = 0, p;
+                for (int i = 0; i <= n; i++)
+                {
+                    p = get_char_pos(SEMICOLON, j, command);
+                    char **current_cmd = &command[j];
+                    current_cmd[p - j] = NULL;
+                    exec_command(current_cmd);
+                    printf("\n\n");
+                    j = p + 1;
+                }
+            }
+        }
     }
 
     return 0;
