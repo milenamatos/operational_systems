@@ -15,9 +15,13 @@
 
 #define BACKGROUND 1
 
+// flag para gerenciar o comando condicional (AND=4, OR=5)
 int current_condition = 0;
+
+// flag para gerenciar comando em background, 0 = false, 1 = true
 int background = 0;
 
+// conta quantidade total do character informado
 int count_characters(int type, char **argv)
 {
     char character;
@@ -44,6 +48,7 @@ int count_characters(int type, char **argv)
     return count;
 }
 
+// retorna primeira posicao encontrada do character informado
 int get_char_pos(int type, int i, char **argv)
 {
     char character;
@@ -69,6 +74,7 @@ int get_char_pos(int type, int i, char **argv)
     return -1;
 }
 
+// retorna posicao do primeira '&&' ou '||' que encontrar
 int get_cond_char_pos(char **argv)
 {
     int i = 0;
@@ -117,6 +123,7 @@ int exec_command_pipes(char **argv, int n_pipes)
 
     for (int j = 0; j <= n_pipes; j++)
     {
+        // formata o comando atual de acordo com a posicao do pipe retornada
         n = get_char_pos(PIPE, i, argv);
         char **cmd = &argv[i];
         if (n != -1)
@@ -166,6 +173,7 @@ int exec_command_conditional(char **cmd, int pos)
     char **cond_cmd;
     if (pos != -1)
     {
+        // formata o comando atual e o prox comando corretamente
         cond_cmd = &cmd[pos + 1];
         current_condition = (cmd[pos][0] == '&') ? AND : OR;
         cmd[pos] = NULL;
@@ -175,6 +183,7 @@ int exec_command_conditional(char **cmd, int pos)
         current_condition = 0;
     }
 
+    // com o retorno do exec_command verifico se será executado o prox comando condicional
     int res = exec_command(cmd);
 
     if ((current_condition == AND && res == 0) ||
@@ -209,6 +218,7 @@ int main(int argc, char **argv)
     errno = 0;
     char **command = &argv[1];
 
+    // verifica primeiro se possui algum comando condicional
     int pos = get_cond_char_pos(command);
     if (pos > 0)
     {
@@ -216,6 +226,7 @@ int main(int argc, char **argv)
     }
     else
     {
+        // senao tem condicional, verifica pipes
         int n = count_characters(PIPE, command);
         if (n > 0)
         {
@@ -223,9 +234,27 @@ int main(int argc, char **argv)
         }
         else
         {
+            // senao tem pipes, verifica ponto e vírgula
+            // neste caso apenas executa os comandos de forma independente
             n = count_characters(SEMICOLON, command);
-            if (n == 0)
+            if (n > 0)
             {
+                int j = 0, p;
+                for (int i = 0; i <= n; i++)
+                {
+                    // sempre busca a posicao do proximo simbolo para chamar a funcao exec_command corretamente
+                    p = get_char_pos(SEMICOLON, j, command);
+                    char **current_cmd = &command[j];
+                    current_cmd[p - j] = NULL;
+                    exec_command(current_cmd);
+                    printf("\n\n");
+                    j = p + 1;
+                }
+            }
+            else
+            {
+                // a ultima possibilidade é que seja apenas um comando simples 
+                // ou seguido de '&' que indica que vai rodar em background
                 n = count_characters(UNIQUE_AND, command);
                 if (n > 0)
                 {
@@ -234,19 +263,6 @@ int main(int argc, char **argv)
                     command[pos] = NULL;
                 }
                 exec_command(command);
-            }
-            else
-            {
-                int j = 0, p;
-                for (int i = 0; i <= n; i++)
-                {
-                    p = get_char_pos(SEMICOLON, j, command);
-                    char **current_cmd = &command[j];
-                    current_cmd[p - j] = NULL;
-                    exec_command(current_cmd);
-                    printf("\n\n");
-                    j = p + 1;
-                }
             }
         }
     }
