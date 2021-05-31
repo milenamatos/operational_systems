@@ -73,21 +73,21 @@ int exec_command(char **cmd)
 {
     pid_t pid; //instancia o indentificador do processo
 
-    pid = fork(); //criação do processo filho a partir do pid pai como uma replica em memoria
-    if (pid == 0) //se for o filho executa os comandos, ja q filho é uma copia do pai com pid = 0 para ele mesmo no retorno, os outros o indentificam com outro pid
-    { // filho executa comando
-        execvp(cmd[0], cmd);
+    pid = fork();            //criação do processo filho a partir do pid pai como uma replica em memoria
+    if (pid == 0)            //se for o filho executa os comandos, ja que filho é uma copia do pai com pid = 0 para ele mesmo no retorno, os outros o indentificam com outro pid
+    {                        // filho executa comando
+        execvp(cmd[0], cmd); //fornece um vetor de ponteiros representando a lista de argumentos para o processo
         return 0;
     }
-    else if (pid > 0)//pai assume pid > 0
-    { // pai aguarda filho se não for processo background
+    else if (pid > 0) //pai assume pid > 0
+    {                 // pai aguarda filho se não for processo background
         int status;
         if (background != BACKGROUND) //se background = 0, entao há processos que precisam ser executados em background,
                                       //se background = 1, entao 1!=0 logo esse processo não precisa ser executado em segundo plano
         {
             waitpid(pid, &status, 0); //pai aguarda termino do filho
         }
-        return WEXITSTATUS(status); // esta macro retorna um valor != 0 se o processo filho terminou com sucesso
+        return WEXITSTATUS(status); // esta macro retorna o status do processo filho
     }
     else // não foi criado processo filho e portanto houve retorno negativo para o pid
     {
@@ -116,14 +116,15 @@ int exec_command_pipes(char **argv, int n_pipes)
 
         pid_t filho = fork(); // cria um processo filho com seu pid
         if (filho == 0)
-        { // filho executa comando
-            close(fd[0]);
-            dup2(aux, STDIN_FILENO); //duplica leitura do pipe sobre entrada padrao
+        {                            // filho executa comando
+            close(fd[0]);            //fecha o canal para leitura
+            dup2(aux, STDIN_FILENO); //duplica pipe sobre entrada padrao
 
             if (j < n_pipes)
                 dup2(fd[1], STDOUT_FILENO); // duplica saida padrao do filho para escrita do pipe
 
             execvp(cmd[0], cmd); //fornece um vetor de ponteiros representando a lista de argumentos para o processo
+            return 0;
         }
         else if (filho > 0)
         { // pai
@@ -162,7 +163,7 @@ int exec_command_conditional(char **cmd, int pos)
     int res = exec_command(cmd);
 
     if ((current_condition == AND && res == 0) ||
-        (current_condition == OR && res > 0))
+        (current_condition == OR && res != 0))
     {
         //rodou o comando e prossegue pro condicional '&&'
         //ou não rodou o comando e prossegue pro condicional '||'
@@ -175,22 +176,21 @@ int exec_command_conditional(char **cmd, int pos)
     return res;
 }
 
-int main(int argc, char **argv)//argc é numero de argumentos e argv é a matriz de argumentos
+int main(int argc, char **argv) //argc é numero de argumentos e argv é a matriz de argumentos
 {
-    if (argc == 1)//usuario passou apenas um comando, então retorna o formato que deve ser pedido
+    if (argc == 1) //usuario passou apenas um comando, então retorna o formato que deve ser pedido
     {
-        printf("Uso: %s <comando1> <parametros> '|' ...  <comando N> <parametros> \n", argv[0]);
-        printf("ou \n %s <comando1> <parametros> ... ';' <comando N> <parametros> \n", argv[0]);
+        printf("Uso: \n1 - %s <comando1> <parametros> '|' ...  <comando N> <parametros> \n", argv[0]);
+        printf("2 - %s <comando1> <parametros> ... ';' <comando N> <parametros> \n", argv[0]);
         printf("Para comandos condicionais utilize: \n");
-        printf("%s <comando1> <parametros> ... '&&' <comando N> <parametros> \n", argv[0]);
-        printf("ou \n %s <comando1> <parametros> ... '||' <comando N> <parametros> \n", argv[0]);
-        printf("E para executar um comando em background: \n");
+        printf("3 - %s <comando1> <parametros> ... '&&' <comando N> <parametros> \n", argv[0]);
+        printf("4 - %s <comando1> <parametros> ... '||' <comando N> <parametros> \n", argv[0]);
+        printf("5 - Para executar um comando em background: \n");
         printf("%s <comando1> <parametros> '&' \n", argv[0]);
         printf("Máximo 50 comandos. \n");
         return 0;
     }
 
-    errno = 0;
     char **command = &argv[1];
 
     // verifica primeiro se possui algum comando condicional
@@ -228,7 +228,7 @@ int main(int argc, char **argv)//argc é numero de argumentos e argv é a matriz
             }
             else
             {
-                // a ultima possibilidade é que seja apenas um comando simples 
+                // a ultima possibilidade é que seja apenas um comando simples
                 // ou seguido de '&' que indica que vai rodar em background
                 n = count_characters(UNIQUE_AND, command);
                 if (n > 0)
