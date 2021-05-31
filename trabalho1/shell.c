@@ -1,3 +1,10 @@
+/*
+    Milena de Matos Siqueira, RA: 122044
+    Pedro Gabriel da Silva, RA: 120887
+
+    Trabalho 1: Shell
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -7,6 +14,7 @@
 
 #define MAX 50
 
+//encadeamento de comandos para comunicação entre processos
 #define PIPE '|'
 #define SEMICOLON ';'
 #define UNIQUE_AND '&'
@@ -47,7 +55,7 @@ int get_char_pos(char character, int i, char **argv)
     return -1;
 }
 
-// retorna posicao do primeira '&&' ou '||' que encontrar
+// retorna posicao do primeiro '&&' ou '||' que encontrar
 int get_cond_char_pos(char **argv)
 {
     int i = 0;
@@ -63,27 +71,25 @@ int get_cond_char_pos(char **argv)
 
 int exec_command(char **cmd)
 {
-    pid_t pid;
-    pid = fork();
-    if (pid == 0)
+    pid_t pid; //instancia o indentificador do processo
+
+    pid = fork(); //criação do processo filho a partir do pid pai como uma replica em memoria
+    if (pid == 0) //se for o filho executa os comandos, ja q filho é uma copia do pai com pid = 0 para ele mesmo no retorno, os outros o indentificam com outro pid
     { // filho executa comando
-        if (execvp(cmd[0], cmd) < 0)
-        {
-            perror("execvp exec_command");
-            return -1;
-        }
+        execvp(cmd[0], cmd);
         return 0;
     }
-    else if (pid > 0)
+    else if (pid > 0)//pai assume pid > 0
     { // pai aguarda filho se não for processo background
         int status;
-        if (background != BACKGROUND)
+        if (background != BACKGROUND) //se background = 0, entao há processos que precisam ser executados em background,
+                                      //se background = 1, entao 1!=0 logo esse processo não precisa ser executado em segundo plano
         {
-            waitpid(pid, &status, 0);
+            waitpid(pid, &status, 0); //pai aguarda termino do filho
         }
-        return WEXITSTATUS(status);
+        return WEXITSTATUS(status); // esta macro retorna um valor != 0 se o processo filho terminou com sucesso
     }
-    else
+    else // não foi criado processo filho e portanto houve retorno negativo para o pid
     {
         return -1;
     }
@@ -91,14 +97,14 @@ int exec_command(char **cmd)
 
 int exec_command_pipes(char **argv, int n_pipes)
 {
-    int fd[2], i = 0, n;
+    int fd[2], i = 0, n; // fd[2] representa a criação de dois canais de comunicação, 1 para escrita, 0 para leitura de dados
     int aux = STDIN_FILENO;
 
     for (int j = 0; j <= n_pipes; j++)
     {
         // formata o comando atual de acordo com a posicao do pipe retornada
         n = get_char_pos(PIPE, i, argv);
-        char **cmd = &argv[i];
+        char **cmd = &argv[i]; //copia o comando referente a posição na matriz de argumento
         if (n != -1)
             cmd[n - i] = NULL;
 
@@ -108,7 +114,7 @@ int exec_command_pipes(char **argv, int n_pipes)
             return -1;
         }
 
-        pid_t filho = fork();
+        pid_t filho = fork(); // cria um processo filho com seu pid
         if (filho == 0)
         { // filho executa comando
             close(fd[0]);
@@ -117,11 +123,7 @@ int exec_command_pipes(char **argv, int n_pipes)
             if (j < n_pipes)
                 dup2(fd[1], STDOUT_FILENO); // duplica saida padrao do filho para escrita do pipe
 
-            if (execvp(cmd[0], cmd) < 0)
-            {
-                perror("execvp pipe filho");
-                return -1;
-            }
+            execvp(cmd[0], cmd); //fornece um vetor de ponteiros representando a lista de argumentos para o processo
         }
         else if (filho > 0)
         { // pai
@@ -173,9 +175,9 @@ int exec_command_conditional(char **cmd, int pos)
     return res;
 }
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)//argc é numero de argumentos e argv é a matriz de argumentos
 {
-    if (argc == 1)
+    if (argc == 1)//usuario passou apenas um comando, então retorna o formato que deve ser pedido
     {
         printf("Uso: %s <comando1> <parametros> '|' ...  <comando N> <parametros> \n", argv[0]);
         printf("ou \n %s <comando1> <parametros> ... ';' <comando N> <parametros> \n", argv[0]);
