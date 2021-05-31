@@ -7,11 +7,12 @@
 
 #define MAX 50
 
-#define PIPE 1
-#define SEMICOLON 2
-#define UNIQUE_AND 3
-#define AND 4
-#define OR 5
+#define PIPE '|'
+#define SEMICOLON ';'
+#define UNIQUE_AND '&'
+
+#define AND 1
+#define OR 2
 
 #define BACKGROUND 1
 
@@ -22,22 +23,8 @@ int current_condition = 0;
 int background = 0;
 
 // conta quantidade total do character informado
-int count_characters(int type, char **argv)
+int count_characters(char character, char **argv)
 {
-    char character;
-    switch (type)
-    {
-    case PIPE:
-        character = '|';
-        break;
-    case SEMICOLON:
-        character = ';';
-        break;
-    case UNIQUE_AND:
-        character = '&';
-        break;
-    }
-
     int count = 0, i = 0;
     while (argv[i])
     {
@@ -49,22 +36,8 @@ int count_characters(int type, char **argv)
 }
 
 // retorna primeira posicao encontrada do character informado
-int get_char_pos(int type, int i, char **argv)
+int get_char_pos(char character, int i, char **argv)
 {
-    char character;
-    switch (type)
-    {
-    case PIPE:
-        character = '|';
-        break;
-    case SEMICOLON:
-        character = ';';
-        break;
-    case UNIQUE_AND:
-        character = '&';
-        break;
-    }
-
     while (argv[i])
     {
         if (*argv[i] == character)
@@ -175,7 +148,7 @@ int exec_command_conditional(char **cmd, int pos)
     {
         // formata o comando atual e o prox comando corretamente
         cond_cmd = &cmd[pos + 1];
-        current_condition = (cmd[pos][0] == '&') ? AND : OR;
+        current_condition = (cmd[pos][0] == UNIQUE_AND) ? AND : OR;
         cmd[pos] = NULL;
     }
     else
