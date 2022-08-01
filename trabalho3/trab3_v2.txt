@@ -1,0 +1,2659 @@
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+Pagina --> id=1, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+Pagina --> id=2, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+Pagina --> id=3, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+Pagina --> id=4, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+Pagina --> id=5, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+MEMORIA REAL: 
+[0] [1] [2] [3] 
+
+*********BIT R************
+0	1	1	1	1	0	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+Pagina --> id=1, contagem=1 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=2, contagem=1 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=3, contagem=1 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=4, contagem=1 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=5, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+MEMORIA REAL: 
+[0] [1] [2] [3] 
+
+*********BIT R************
+1	1	0	1	0	1	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=1, contagem=2 
+[1] [1] [0] [0] [0] [0] [0] [0]  --> 192 
+
+Pagina --> id=2, contagem=1 
+[0] [1] [0] [0] [0] [0] [0] [0]  --> 64 
+
+Pagina --> id=3, contagem=2 
+[1] [1] [0] [0] [0] [0] [0] [0]  --> 192 
+
+Pagina --> id=4, contagem=1 
+[0] [1] [0] [0] [0] [0] [0] [0]  --> 64 
+
+Pagina --> id=5, contagem=0 
+[0] [0] [0] [0] [0] [0] [0] [0]  --> 0 
+
+MEMORIA REAL: 
+[0] [1] [2] [3] 
+
+*********BIT R************
+0	0	0	0	0	1	
+pagina sorteada id=5: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [1] [0] [0] [0] [0] [0] [0]  --> 64 
+
+Pagina --> id=1, contagem=2 
+[0] [1] [1] [0] [0] [0] [0] [0]  --> 96 
+
+Pagina --> id=2, contagem=1 
+[0] [0] [1] [0] [0] [0] [0] [0]  --> 32 
+
+Pagina --> id=3, contagem=2 
+[0] [1] [1] [0] [0] [0] [0] [0]  --> 96 
+
+Pagina --> id=4, contagem=1 
+[0] [0] [1] [0] [0] [0] [0] [0]  --> 32 
+
+Pagina --> id=5, contagem=1 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+MEMORIA REAL: 
+[0] [1] [5] [3] 
+
+*********BIT R************
+1	1	0	0	0	1	
+pagina sorteada id=2: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [1] [0] [0] [0] [0] [0]  --> 160 
+
+Pagina --> id=1, contagem=3 
+[1] [0] [1] [1] [0] [0] [0] [0]  --> 176 
+
+Pagina --> id=2, contagem=1 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=3, contagem=2 
+[0] [0] [1] [1] [0] [0] [0] [0]  --> 48 
+
+Pagina --> id=4, contagem=1 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=5, contagem=1 
+[0] [1] [0] [0] [0] [0] [0] [0]  --> 64 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+1	1	0	0	0	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [0] [1] [0] [0] [0] [0]  --> 208 
+
+Pagina --> id=1, contagem=4 
+[1] [1] [0] [1] [1] [0] [0] [0]  --> 216 
+
+Pagina --> id=2, contagem=1 
+[0] [0] [0] [0] [1] [0] [0] [0]  --> 8 
+
+Pagina --> id=3, contagem=2 
+[0] [0] [0] [1] [1] [0] [0] [0]  --> 24 
+
+Pagina --> id=4, contagem=1 
+[0] [0] [0] [0] [1] [0] [0] [0]  --> 8 
+
+Pagina --> id=5, contagem=1 
+[0] [0] [1] [0] [0] [0] [0] [0]  --> 32 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+1	0	1	0	1	1	
+pagina sorteada id=3: page miss 
+substituir página id=0 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=2 
+[1] [1] [1] [0] [1] [0] [0] [0]  --> 232 
+
+Pagina --> id=1, contagem=4 
+[0] [1] [1] [0] [1] [1] [0] [0]  --> 108 
+
+Pagina --> id=2, contagem=2 
+[1] [0] [0] [0] [0] [1] [0] [0]  --> 132 
+
+Pagina --> id=3, contagem=2 
+[0] [0] [0] [0] [1] [1] [0] [0]  --> 12 
+
+Pagina --> id=4, contagem=2 
+[1] [0] [0] [0] [0] [1] [0] [0]  --> 132 
+
+Pagina --> id=5, contagem=1 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+MEMORIA REAL: 
+[3] [1] [5] [2] 
+
+*********BIT R************
+1	0	1	0	0	1	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [1] [0] [1] [0] [0]  --> 244 
+
+Pagina --> id=1, contagem=4 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=2, contagem=3 
+[1] [1] [0] [0] [0] [0] [1] [0]  --> 194 
+
+Pagina --> id=3, contagem=2 
+[0] [0] [0] [0] [0] [1] [1] [0]  --> 6 
+
+Pagina --> id=4, contagem=2 
+[0] [1] [0] [0] [0] [0] [1] [0]  --> 66 
+
+Pagina --> id=5, contagem=1 
+[0] [0] [0] [0] [1] [0] [0] [0]  --> 8 
+
+MEMORIA REAL: 
+[3] [1] [5] [2] 
+
+*********BIT R************
+1	0	1	0	0	1	
+pagina sorteada id=0: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [1] [1] [0] [1] [0]  --> 250 
+
+Pagina --> id=1, contagem=4 
+[0] [0] [0] [1] [1] [0] [1] [1]  --> 27 
+
+Pagina --> id=2, contagem=4 
+[1] [1] [1] [0] [0] [0] [0] [1]  --> 225 
+
+Pagina --> id=3, contagem=2 
+[0] [0] [0] [0] [0] [0] [1] [1]  --> 3 
+
+Pagina --> id=4, contagem=2 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=5, contagem=1 
+[0] [0] [0] [0] [0] [1] [0] [0]  --> 4 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+0	0	1	1	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [1] [1] [1] [1] [0] [1]  --> 125 
+
+Pagina --> id=1, contagem=4 
+[0] [0] [0] [0] [1] [1] [0] [1]  --> 13 
+
+Pagina --> id=2, contagem=5 
+[1] [1] [1] [1] [0] [0] [0] [0]  --> 240 
+
+Pagina --> id=3, contagem=3 
+[1] [0] [0] [0] [0] [0] [0] [1]  --> 129 
+
+Pagina --> id=4, contagem=3 
+[1] [0] [0] [1] [0] [0] [0] [0]  --> 144 
+
+Pagina --> id=5, contagem=1 
+[0] [0] [0] [0] [0] [0] [1] [0]  --> 2 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+0	1	0	1	1	1	
+pagina sorteada id=3: page miss 
+substituir página id=0 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [0] [1] [1] [1] [1] [1] [0]  --> 62 
+
+Pagina --> id=1, contagem=5 
+[1] [0] [0] [0] [0] [1] [1] [0]  --> 134 
+
+Pagina --> id=2, contagem=5 
+[0] [1] [1] [1] [1] [0] [0] [0]  --> 120 
+
+Pagina --> id=3, contagem=4 
+[1] [1] [0] [0] [0] [0] [0] [0]  --> 192 
+
+Pagina --> id=4, contagem=4 
+[1] [1] [0] [0] [1] [0] [0] [0]  --> 200 
+
+Pagina --> id=5, contagem=2 
+[1] [0] [0] [0] [0] [0] [0] [1]  --> 129 
+
+MEMORIA REAL: 
+[3] [1] [5] [2] 
+
+*********BIT R************
+1	0	1	0	1	0	
+pagina sorteada id=0: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [0] [1] [1] [1] [1] [1]  --> 159 
+
+Pagina --> id=1, contagem=5 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=2, contagem=6 
+[1] [0] [1] [1] [1] [1] [0] [0]  --> 188 
+
+Pagina --> id=3, contagem=4 
+[0] [1] [1] [0] [0] [0] [0] [0]  --> 96 
+
+Pagina --> id=4, contagem=5 
+[1] [1] [1] [0] [0] [1] [0] [0]  --> 228 
+
+Pagina --> id=5, contagem=3 
+[1] [1] [0] [0] [0] [0] [0] [0]  --> 192 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+1	0	1	0	0	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [1] [0] [0] [1] [1] [1] [1]  --> 207 
+
+Pagina --> id=1, contagem=5 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=2, contagem=7 
+[1] [1] [0] [1] [1] [1] [1] [0]  --> 222 
+
+Pagina --> id=3, contagem=4 
+[0] [0] [1] [1] [0] [0] [0] [0]  --> 48 
+
+Pagina --> id=4, contagem=5 
+[0] [1] [1] [1] [0] [0] [1] [0]  --> 114 
+
+Pagina --> id=5, contagem=4 
+[1] [1] [1] [0] [0] [0] [0] [0]  --> 224 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+0	1	1	0	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [1] [0] [0] [1] [1] [1]  --> 103 
+
+Pagina --> id=1, contagem=6 
+[1] [0] [0] [1] [0] [0] [0] [0]  --> 144 
+
+Pagina --> id=2, contagem=8 
+[1] [1] [1] [0] [1] [1] [1] [1]  --> 239 
+
+Pagina --> id=3, contagem=4 
+[0] [0] [0] [1] [1] [0] [0] [0]  --> 24 
+
+Pagina --> id=4, contagem=6 
+[1] [0] [1] [1] [1] [0] [0] [1]  --> 185 
+
+Pagina --> id=5, contagem=4 
+[0] [1] [1] [1] [0] [0] [0] [0]  --> 112 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+0	0	1	0	0	0	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [0] [1] [1] [0] [0] [1] [1]  --> 51 
+
+Pagina --> id=1, contagem=6 
+[0] [1] [0] [0] [1] [0] [0] [0]  --> 72 
+
+Pagina --> id=2, contagem=9 
+[1] [1] [1] [1] [0] [1] [1] [1]  --> 247 
+
+Pagina --> id=3, contagem=4 
+[0] [0] [0] [0] [1] [1] [0] [0]  --> 12 
+
+Pagina --> id=4, contagem=6 
+[0] [1] [0] [1] [1] [1] [0] [0]  --> 92 
+
+Pagina --> id=5, contagem=4 
+[0] [0] [1] [1] [1] [0] [0] [0]  --> 56 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+1	1	0	0	0	1	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [0] [1] [1] [0] [0] [1]  --> 153 
+
+Pagina --> id=1, contagem=7 
+[1] [0] [1] [0] [0] [1] [0] [0]  --> 164 
+
+Pagina --> id=2, contagem=9 
+[0] [1] [1] [1] [1] [0] [1] [1]  --> 123 
+
+Pagina --> id=3, contagem=4 
+[0] [0] [0] [0] [0] [1] [1] [0]  --> 6 
+
+Pagina --> id=4, contagem=6 
+[0] [0] [1] [0] [1] [1] [1] [0]  --> 46 
+
+Pagina --> id=5, contagem=4 
+[0] [0] [0] [1] [1] [1] [0] [0]  --> 28 
+
+MEMORIA REAL: 
+[0] [1] [5] [2] 
+
+*********BIT R************
+1	0	1	0	0	0	
+pagina sorteada id=3: page miss 
+substituir página id=1 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [1] [0] [0] [1] [1] [0] [0]  --> 204 
+
+Pagina --> id=1, contagem=7 
+[0] [1] [0] [1] [0] [0] [1] [0]  --> 82 
+
+Pagina --> id=2, contagem=10 
+[1] [0] [1] [1] [1] [1] [0] [1]  --> 189 
+
+Pagina --> id=3, contagem=4 
+[0] [0] [0] [0] [0] [0] [1] [1]  --> 3 
+
+Pagina --> id=4, contagem=6 
+[0] [0] [0] [1] [0] [1] [1] [1]  --> 23 
+
+Pagina --> id=5, contagem=5 
+[1] [0] [0] [0] [1] [1] [1] [0]  --> 142 
+
+MEMORIA REAL: 
+[0] [3] [5] [2] 
+
+*********BIT R************
+0	0	1	1	1	0	
+pagina sorteada id=1: page miss 
+substituir página id=0 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [1] [0] [0] [1] [1] [0]  --> 102 
+
+Pagina --> id=1, contagem=7 
+[0] [0] [1] [0] [1] [0] [0] [1]  --> 41 
+
+Pagina --> id=2, contagem=11 
+[1] [1] [0] [1] [1] [1] [1] [0]  --> 222 
+
+Pagina --> id=3, contagem=5 
+[1] [0] [0] [0] [0] [0] [0] [1]  --> 129 
+
+Pagina --> id=4, contagem=7 
+[1] [0] [0] [0] [1] [0] [1] [1]  --> 139 
+
+Pagina --> id=5, contagem=5 
+[0] [1] [0] [0] [0] [1] [1] [1]  --> 71 
+
+MEMORIA REAL: 
+[1] [3] [5] [2] 
+
+*********BIT R************
+0	1	1	1	1	1	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [0] [1] [1] [0] [0] [1] [1]  --> 51 
+
+Pagina --> id=1, contagem=8 
+[1] [0] [0] [1] [0] [1] [0] [0]  --> 148 
+
+Pagina --> id=2, contagem=12 
+[1] [1] [1] [0] [1] [1] [1] [1]  --> 239 
+
+Pagina --> id=3, contagem=6 
+[1] [1] [0] [0] [0] [0] [0] [0]  --> 192 
+
+Pagina --> id=4, contagem=8 
+[1] [1] [0] [0] [0] [1] [0] [1]  --> 197 
+
+Pagina --> id=5, contagem=6 
+[1] [0] [1] [0] [0] [0] [1] [1]  --> 163 
+
+MEMORIA REAL: 
+[1] [3] [5] [2] 
+
+*********BIT R************
+1	1	1	1	0	1	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [0] [1] [1] [0] [0] [1]  --> 153 
+
+Pagina --> id=1, contagem=9 
+[1] [1] [0] [0] [1] [0] [1] [0]  --> 202 
+
+Pagina --> id=2, contagem=13 
+[1] [1] [1] [1] [0] [1] [1] [1]  --> 247 
+
+Pagina --> id=3, contagem=7 
+[1] [1] [1] [0] [0] [0] [0] [0]  --> 224 
+
+Pagina --> id=4, contagem=8 
+[0] [1] [1] [0] [0] [0] [1] [0]  --> 98 
+
+Pagina --> id=5, contagem=6 
+[0] [1] [0] [1] [0] [0] [0] [1]  --> 81 
+
+MEMORIA REAL: 
+[1] [3] [5] [2] 
+
+*********BIT R************
+0	1	0	1	1	0	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [0] [0] [1] [1] [0] [0]  --> 76 
+
+Pagina --> id=1, contagem=10 
+[1] [1] [1] [0] [0] [1] [0] [1]  --> 229 
+
+Pagina --> id=2, contagem=13 
+[0] [1] [1] [1] [1] [0] [1] [1]  --> 123 
+
+Pagina --> id=3, contagem=8 
+[1] [1] [1] [1] [0] [0] [0] [0]  --> 240 
+
+Pagina --> id=4, contagem=9 
+[1] [0] [1] [1] [0] [0] [0] [1]  --> 177 
+
+Pagina --> id=5, contagem=6 
+[0] [0] [1] [0] [1] [0] [0] [0]  --> 40 
+
+MEMORIA REAL: 
+[1] [3] [5] [2] 
+
+*********BIT R************
+1	0	1	1	1	0	
+pagina sorteada id=4: page miss 
+substituir página id=5 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [1] [0] [0] [1] [1] [0]  --> 166 
+
+Pagina --> id=1, contagem=10 
+[0] [1] [1] [1] [0] [0] [1] [0]  --> 114 
+
+Pagina --> id=2, contagem=14 
+[1] [0] [1] [1] [1] [1] [0] [1]  --> 189 
+
+Pagina --> id=3, contagem=9 
+[1] [1] [1] [1] [1] [0] [0] [0]  --> 248 
+
+Pagina --> id=4, contagem=10 
+[1] [1] [0] [1] [1] [0] [0] [0]  --> 216 
+
+Pagina --> id=5, contagem=7 
+[1] [0] [0] [1] [0] [1] [0] [0]  --> 148 
+
+MEMORIA REAL: 
+[1] [3] [4] [2] 
+
+*********BIT R************
+0	1	0	1	0	1	
+pagina sorteada id=0: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [1] [0] [1] [0] [0] [1] [1]  --> 83 
+
+Pagina --> id=1, contagem=11 
+[1] [0] [1] [1] [1] [0] [0] [1]  --> 185 
+
+Pagina --> id=2, contagem=14 
+[0] [1] [0] [1] [1] [1] [1] [0]  --> 94 
+
+Pagina --> id=3, contagem=10 
+[1] [1] [1] [1] [1] [1] [0] [0]  --> 252 
+
+Pagina --> id=4, contagem=10 
+[0] [1] [1] [0] [1] [1] [0] [0]  --> 108 
+
+Pagina --> id=5, contagem=8 
+[1] [1] [0] [0] [1] [0] [1] [0]  --> 202 
+
+MEMORIA REAL: 
+[1] [3] [4] [0] 
+
+*********BIT R************
+1	0	1	1	1	1	
+pagina sorteada id=2: page miss 
+substituir página id=1 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=2 
+[1] [0] [1] [0] [1] [0] [0] [1]  --> 169 
+
+Pagina --> id=1, contagem=11 
+[0] [1] [0] [1] [1] [1] [0] [0]  --> 92 
+
+Pagina --> id=2, contagem=15 
+[1] [0] [1] [0] [1] [1] [1] [1]  --> 175 
+
+Pagina --> id=3, contagem=11 
+[1] [1] [1] [1] [1] [1] [1] [0]  --> 254 
+
+Pagina --> id=4, contagem=11 
+[1] [0] [1] [1] [0] [1] [1] [0]  --> 182 
+
+Pagina --> id=5, contagem=8 
+[0] [1] [1] [0] [0] [1] [0] [1]  --> 101 
+
+MEMORIA REAL: 
+[2] [3] [4] [0] 
+
+*********BIT R************
+0	0	1	0	1	0	
+pagina sorteada id=4: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [0] [1] [0] [1] [0] [0]  --> 84 
+
+Pagina --> id=1, contagem=11 
+[0] [0] [1] [0] [1] [1] [1] [0]  --> 46 
+
+Pagina --> id=2, contagem=16 
+[1] [1] [0] [1] [0] [1] [1] [1]  --> 215 
+
+Pagina --> id=3, contagem=11 
+[0] [1] [1] [1] [1] [1] [1] [1]  --> 127 
+
+Pagina --> id=4, contagem=12 
+[1] [1] [0] [1] [1] [0] [1] [1]  --> 219 
+
+Pagina --> id=5, contagem=8 
+[0] [0] [1] [1] [0] [0] [1] [0]  --> 50 
+
+MEMORIA REAL: 
+[2] [3] [4] [0] 
+
+*********BIT R************
+0	0	0	1	0	1	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [0] [1] [0] [1] [0]  --> 42 
+
+Pagina --> id=1, contagem=11 
+[0] [0] [0] [1] [0] [1] [1] [1]  --> 23 
+
+Pagina --> id=2, contagem=16 
+[0] [1] [1] [0] [1] [0] [1] [1]  --> 107 
+
+Pagina --> id=3, contagem=12 
+[1] [0] [1] [1] [1] [1] [1] [1]  --> 191 
+
+Pagina --> id=4, contagem=12 
+[0] [1] [1] [0] [1] [1] [0] [1]  --> 109 
+
+Pagina --> id=5, contagem=9 
+[1] [0] [0] [1] [1] [0] [0] [1]  --> 153 
+
+MEMORIA REAL: 
+[2] [3] [4] [0] 
+
+*********BIT R************
+1	1	1	0	0	1	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [0] [1] [0] [1] [0] [1]  --> 149 
+
+Pagina --> id=1, contagem=12 
+[1] [0] [0] [0] [1] [0] [1] [1]  --> 139 
+
+Pagina --> id=2, contagem=17 
+[1] [0] [1] [1] [0] [1] [0] [1]  --> 181 
+
+Pagina --> id=3, contagem=12 
+[0] [1] [0] [1] [1] [1] [1] [1]  --> 95 
+
+Pagina --> id=4, contagem=12 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=5, contagem=9 
+[0] [1] [0] [0] [1] [1] [0] [0]  --> 76 
+
+MEMORIA REAL: 
+[2] [3] [4] [0] 
+
+*********BIT R************
+0	1	1	0	1	0	
+pagina sorteada id=5: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [0] [0] [1] [0] [1] [0]  --> 74 
+
+Pagina --> id=1, contagem=13 
+[1] [1] [0] [0] [0] [1] [0] [1]  --> 197 
+
+Pagina --> id=2, contagem=18 
+[1] [1] [0] [1] [1] [0] [1] [0]  --> 218 
+
+Pagina --> id=3, contagem=12 
+[0] [0] [1] [0] [1] [1] [1] [1]  --> 47 
+
+Pagina --> id=4, contagem=13 
+[1] [0] [0] [1] [1] [0] [1] [1]  --> 155 
+
+Pagina --> id=5, contagem=9 
+[0] [0] [1] [0] [0] [1] [1] [0]  --> 38 
+
+MEMORIA REAL: 
+[2] [5] [4] [0] 
+
+*********BIT R************
+1	1	1	1	0	0	
+pagina sorteada id=1: page miss 
+substituir página id=4 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [0] [1] [0] [0] [1] [0] [1]  --> 165 
+
+Pagina --> id=1, contagem=14 
+[1] [1] [1] [0] [0] [0] [1] [0]  --> 226 
+
+Pagina --> id=2, contagem=19 
+[1] [1] [1] [0] [1] [1] [0] [1]  --> 237 
+
+Pagina --> id=3, contagem=13 
+[1] [0] [0] [1] [0] [1] [1] [1]  --> 151 
+
+Pagina --> id=4, contagem=13 
+[0] [1] [0] [0] [1] [1] [0] [1]  --> 77 
+
+Pagina --> id=5, contagem=10 
+[1] [0] [0] [1] [0] [0] [1] [1]  --> 147 
+
+MEMORIA REAL: 
+[2] [5] [1] [0] 
+
+*********BIT R************
+1	0	1	0	0	1	
+pagina sorteada id=3: page miss 
+substituir página id=5 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [0] [1] [0] [0] [1] [0]  --> 210 
+
+Pagina --> id=1, contagem=14 
+[0] [1] [1] [1] [0] [0] [0] [1]  --> 113 
+
+Pagina --> id=2, contagem=20 
+[1] [1] [1] [1] [0] [1] [1] [0]  --> 246 
+
+Pagina --> id=3, contagem=13 
+[0] [1] [0] [0] [1] [0] [1] [1]  --> 75 
+
+Pagina --> id=4, contagem=13 
+[0] [0] [1] [0] [0] [1] [1] [0]  --> 38 
+
+Pagina --> id=5, contagem=10 
+[0] [1] [0] [0] [1] [0] [0] [1]  --> 73 
+
+MEMORIA REAL: 
+[2] [3] [1] [0] 
+
+*********BIT R************
+1	0	0	0	0	0	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [1] [1] [0] [1] [0] [0] [1]  --> 233 
+
+Pagina --> id=1, contagem=14 
+[0] [0] [1] [1] [1] [0] [0] [0]  --> 56 
+
+Pagina --> id=2, contagem=20 
+[0] [1] [1] [1] [1] [0] [1] [1]  --> 123 
+
+Pagina --> id=3, contagem=13 
+[0] [0] [1] [0] [0] [1] [0] [1]  --> 37 
+
+Pagina --> id=4, contagem=13 
+[0] [0] [0] [1] [0] [0] [1] [1]  --> 19 
+
+Pagina --> id=5, contagem=11 
+[1] [0] [1] [0] [0] [1] [0] [0]  --> 164 
+
+MEMORIA REAL: 
+[2] [3] [1] [0] 
+
+*********BIT R************
+0	1	1	1	0	0	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [1] [1] [1] [0] [1] [0] [0]  --> 116 
+
+Pagina --> id=1, contagem=15 
+[1] [0] [0] [1] [1] [1] [0] [0]  --> 156 
+
+Pagina --> id=2, contagem=21 
+[1] [0] [1] [1] [1] [1] [0] [1]  --> 189 
+
+Pagina --> id=3, contagem=14 
+[1] [0] [0] [1] [0] [0] [1] [0]  --> 146 
+
+Pagina --> id=4, contagem=13 
+[0] [0] [0] [0] [1] [0] [0] [1]  --> 9 
+
+Pagina --> id=5, contagem=11 
+[0] [1] [0] [1] [0] [0] [1] [0]  --> 82 
+
+MEMORIA REAL: 
+[2] [3] [1] [0] 
+
+*********BIT R************
+0	1	0	1	0	1	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [1] [1] [0] [1] [0]  --> 58 
+
+Pagina --> id=1, contagem=16 
+[1] [1] [0] [0] [1] [1] [1] [0]  --> 206 
+
+Pagina --> id=2, contagem=21 
+[0] [1] [0] [1] [1] [1] [1] [0]  --> 94 
+
+Pagina --> id=3, contagem=15 
+[1] [1] [0] [0] [1] [0] [0] [1]  --> 201 
+
+Pagina --> id=4, contagem=13 
+[0] [0] [0] [0] [0] [1] [0] [0]  --> 4 
+
+Pagina --> id=5, contagem=12 
+[1] [0] [1] [0] [1] [0] [0] [1]  --> 169 
+
+MEMORIA REAL: 
+[2] [3] [1] [0] 
+
+*********BIT R************
+0	1	1	0	0	1	
+pagina sorteada id=4: page miss 
+substituir página id=0 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [0] [1] [1] [1] [0] [1]  --> 29 
+
+Pagina --> id=1, contagem=17 
+[1] [1] [1] [0] [0] [1] [1] [1]  --> 231 
+
+Pagina --> id=2, contagem=22 
+[1] [0] [1] [0] [1] [1] [1] [1]  --> 175 
+
+Pagina --> id=3, contagem=15 
+[0] [1] [1] [0] [0] [1] [0] [0]  --> 100 
+
+Pagina --> id=4, contagem=13 
+[0] [0] [0] [0] [0] [0] [1] [0]  --> 2 
+
+Pagina --> id=5, contagem=13 
+[1] [1] [0] [1] [0] [1] [0] [0]  --> 212 
+
+MEMORIA REAL: 
+[2] [3] [1] [4] 
+
+*********BIT R************
+0	0	1	1	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [0] [0] [0] [1] [1] [1] [0]  --> 14 
+
+Pagina --> id=1, contagem=17 
+[0] [1] [1] [1] [0] [0] [1] [1]  --> 115 
+
+Pagina --> id=2, contagem=23 
+[1] [1] [0] [1] [0] [1] [1] [1]  --> 215 
+
+Pagina --> id=3, contagem=16 
+[1] [0] [1] [1] [0] [0] [1] [0]  --> 178 
+
+Pagina --> id=4, contagem=14 
+[1] [0] [0] [0] [0] [0] [0] [1]  --> 129 
+
+Pagina --> id=5, contagem=13 
+[0] [1] [1] [0] [1] [0] [1] [0]  --> 106 
+
+MEMORIA REAL: 
+[2] [3] [1] [4] 
+
+*********BIT R************
+1	0	0	1	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [0] [0] [0] [1] [1] [1]  --> 135 
+
+Pagina --> id=1, contagem=17 
+[0] [0] [1] [1] [1] [0] [0] [1]  --> 57 
+
+Pagina --> id=2, contagem=23 
+[0] [1] [1] [0] [1] [0] [1] [1]  --> 107 
+
+Pagina --> id=3, contagem=17 
+[1] [1] [0] [1] [1] [0] [0] [1]  --> 217 
+
+Pagina --> id=4, contagem=15 
+[1] [1] [0] [0] [0] [0] [0] [0]  --> 192 
+
+Pagina --> id=5, contagem=14 
+[1] [0] [1] [1] [0] [1] [0] [1]  --> 181 
+
+MEMORIA REAL: 
+[2] [3] [1] [4] 
+
+*********BIT R************
+0	0	1	0	1	1	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=1, contagem=17 
+[0] [0] [0] [1] [1] [1] [0] [0]  --> 28 
+
+Pagina --> id=2, contagem=24 
+[1] [0] [1] [1] [0] [1] [0] [1]  --> 181 
+
+Pagina --> id=3, contagem=17 
+[0] [1] [1] [0] [1] [1] [0] [0]  --> 108 
+
+Pagina --> id=4, contagem=16 
+[1] [1] [1] [0] [0] [0] [0] [0]  --> 224 
+
+Pagina --> id=5, contagem=15 
+[1] [1] [0] [1] [1] [0] [1] [0]  --> 218 
+
+MEMORIA REAL: 
+[2] [3] [1] [4] 
+
+*********BIT R************
+0	0	1	0	0	0	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=1, contagem=17 
+[0] [0] [0] [0] [1] [1] [1] [0]  --> 14 
+
+Pagina --> id=2, contagem=25 
+[1] [1] [0] [1] [1] [0] [1] [0]  --> 218 
+
+Pagina --> id=3, contagem=17 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=4, contagem=16 
+[0] [1] [1] [1] [0] [0] [0] [0]  --> 112 
+
+Pagina --> id=5, contagem=15 
+[0] [1] [1] [0] [1] [1] [0] [1]  --> 109 
+
+MEMORIA REAL: 
+[2] [3] [1] [4] 
+
+*********BIT R************
+0	1	0	0	0	0	
+pagina sorteada id=0: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=1, contagem=18 
+[1] [0] [0] [0] [0] [1] [1] [1]  --> 135 
+
+Pagina --> id=2, contagem=25 
+[0] [1] [1] [0] [1] [1] [0] [1]  --> 109 
+
+Pagina --> id=3, contagem=17 
+[0] [0] [0] [1] [1] [0] [1] [1]  --> 27 
+
+Pagina --> id=4, contagem=16 
+[0] [0] [1] [1] [1] [0] [0] [0]  --> 56 
+
+Pagina --> id=5, contagem=15 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+MEMORIA REAL: 
+[2] [0] [1] [4] 
+
+*********BIT R************
+1	0	0	0	0	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [0] [0] [0] [1] [0] [0] [0]  --> 136 
+
+Pagina --> id=1, contagem=18 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=2, contagem=25 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=3, contagem=17 
+[0] [0] [0] [0] [1] [1] [0] [1]  --> 13 
+
+Pagina --> id=4, contagem=16 
+[0] [0] [0] [1] [1] [1] [0] [0]  --> 28 
+
+Pagina --> id=5, contagem=16 
+[1] [0] [0] [1] [1] [0] [1] [1]  --> 155 
+
+MEMORIA REAL: 
+[2] [0] [1] [4] 
+
+*********BIT R************
+1	0	0	1	1	1	
+pagina sorteada id=5: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=2 
+[1] [1] [0] [0] [0] [1] [0] [0]  --> 196 
+
+Pagina --> id=1, contagem=18 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=2, contagem=25 
+[0] [0] [0] [1] [1] [0] [1] [1]  --> 27 
+
+Pagina --> id=3, contagem=18 
+[1] [0] [0] [0] [0] [1] [1] [0]  --> 134 
+
+Pagina --> id=4, contagem=17 
+[1] [0] [0] [0] [1] [1] [1] [0]  --> 142 
+
+Pagina --> id=5, contagem=16 
+[0] [1] [0] [0] [1] [1] [0] [1]  --> 77 
+
+MEMORIA REAL: 
+[5] [0] [1] [4] 
+
+*********BIT R************
+0	1	0	0	1	1	
+pagina sorteada id=3: page miss 
+substituir página id=1 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [1] [1] [0] [0] [0] [1] [0]  --> 98 
+
+Pagina --> id=1, contagem=19 
+[1] [0] [0] [1] [0] [0] [0] [0]  --> 144 
+
+Pagina --> id=2, contagem=25 
+[0] [0] [0] [0] [1] [1] [0] [1]  --> 13 
+
+Pagina --> id=3, contagem=18 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=4, contagem=18 
+[1] [1] [0] [0] [0] [1] [1] [1]  --> 199 
+
+Pagina --> id=5, contagem=17 
+[1] [0] [1] [0] [0] [1] [1] [0]  --> 166 
+
+MEMORIA REAL: 
+[5] [0] [3] [4] 
+
+*********BIT R************
+1	0	1	1	1	0	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [1] [1] [0] [0] [0] [1]  --> 177 
+
+Pagina --> id=1, contagem=19 
+[0] [1] [0] [0] [1] [0] [0] [0]  --> 72 
+
+Pagina --> id=2, contagem=26 
+[1] [0] [0] [0] [0] [1] [1] [0]  --> 134 
+
+Pagina --> id=3, contagem=19 
+[1] [0] [1] [0] [0] [0] [0] [1]  --> 161 
+
+Pagina --> id=4, contagem=19 
+[1] [1] [1] [0] [0] [0] [1] [1]  --> 227 
+
+Pagina --> id=5, contagem=18 
+[1] [1] [0] [1] [0] [0] [1] [1]  --> 211 
+
+MEMORIA REAL: 
+[5] [0] [3] [4] 
+
+*********BIT R************
+1	0	0	0	0	0	
+pagina sorteada id=2: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [1] [0] [1] [1] [0] [0] [0]  --> 216 
+
+Pagina --> id=1, contagem=19 
+[0] [0] [1] [0] [0] [1] [0] [0]  --> 36 
+
+Pagina --> id=2, contagem=26 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=3, contagem=19 
+[0] [1] [0] [1] [0] [0] [0] [0]  --> 80 
+
+Pagina --> id=4, contagem=19 
+[0] [1] [1] [1] [0] [0] [0] [1]  --> 113 
+
+Pagina --> id=5, contagem=19 
+[1] [1] [1] [0] [1] [0] [0] [1]  --> 233 
+
+MEMORIA REAL: 
+[5] [0] [2] [4] 
+
+*********BIT R************
+0	0	0	1	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [1] [0] [1] [1] [0] [0]  --> 108 
+
+Pagina --> id=1, contagem=19 
+[0] [0] [0] [1] [0] [0] [1] [0]  --> 18 
+
+Pagina --> id=2, contagem=26 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=3, contagem=20 
+[1] [0] [1] [0] [1] [0] [0] [0]  --> 168 
+
+Pagina --> id=4, contagem=20 
+[1] [0] [1] [1] [1] [0] [0] [0]  --> 184 
+
+Pagina --> id=5, contagem=19 
+[0] [1] [1] [1] [0] [1] [0] [0]  --> 116 
+
+MEMORIA REAL: 
+[5] [0] [2] [4] 
+
+*********BIT R************
+0	1	0	0	0	1	
+pagina sorteada id=1: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=1, contagem=20 
+[1] [0] [0] [0] [1] [0] [0] [1]  --> 137 
+
+Pagina --> id=2, contagem=26 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=3, contagem=20 
+[0] [1] [0] [1] [0] [1] [0] [0]  --> 84 
+
+Pagina --> id=4, contagem=20 
+[0] [1] [0] [1] [1] [1] [0] [0]  --> 92 
+
+Pagina --> id=5, contagem=20 
+[1] [0] [1] [1] [1] [0] [1] [0]  --> 186 
+
+MEMORIA REAL: 
+[5] [0] [1] [4] 
+
+*********BIT R************
+0	0	0	1	0	1	
+pagina sorteada id=3: page miss 
+substituir página id=0 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [0] [1] [1] [0] [1] [1]  --> 27 
+
+Pagina --> id=1, contagem=20 
+[0] [1] [0] [0] [0] [1] [0] [0]  --> 68 
+
+Pagina --> id=2, contagem=26 
+[0] [0] [0] [0] [1] [0] [0] [0]  --> 8 
+
+Pagina --> id=3, contagem=21 
+[1] [0] [1] [0] [1] [0] [1] [0]  --> 170 
+
+Pagina --> id=4, contagem=20 
+[0] [0] [1] [0] [1] [1] [1] [0]  --> 46 
+
+Pagina --> id=5, contagem=21 
+[1] [1] [0] [1] [1] [1] [0] [1]  --> 221 
+
+MEMORIA REAL: 
+[5] [3] [1] [4] 
+
+*********BIT R************
+0	1	1	1	1	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [0] [0] [0] [1] [1] [0] [1]  --> 13 
+
+Pagina --> id=1, contagem=21 
+[1] [0] [1] [0] [0] [0] [1] [0]  --> 162 
+
+Pagina --> id=2, contagem=27 
+[1] [0] [0] [0] [0] [1] [0] [0]  --> 132 
+
+Pagina --> id=3, contagem=22 
+[1] [1] [0] [1] [0] [1] [0] [1]  --> 213 
+
+Pagina --> id=4, contagem=21 
+[1] [0] [0] [1] [0] [1] [1] [1]  --> 151 
+
+Pagina --> id=5, contagem=22 
+[1] [1] [1] [0] [1] [1] [1] [0]  --> 238 
+
+MEMORIA REAL: 
+[5] [3] [1] [4] 
+
+*********BIT R************
+1	1	0	1	1	0	
+pagina sorteada id=2: page miss 
+substituir página id=1 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [0] [0] [0] [1] [1] [0]  --> 134 
+
+Pagina --> id=1, contagem=22 
+[1] [1] [0] [1] [0] [0] [0] [1]  --> 209 
+
+Pagina --> id=2, contagem=27 
+[0] [1] [0] [0] [0] [0] [1] [0]  --> 66 
+
+Pagina --> id=3, contagem=23 
+[1] [1] [1] [0] [1] [0] [1] [0]  --> 234 
+
+Pagina --> id=4, contagem=22 
+[1] [1] [0] [0] [1] [0] [1] [1]  --> 203 
+
+Pagina --> id=5, contagem=23 
+[1] [1] [1] [1] [0] [1] [1] [1]  --> 247 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+0	0	0	0	0	0	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=1, contagem=22 
+[0] [1] [1] [0] [1] [0] [0] [0]  --> 104 
+
+Pagina --> id=2, contagem=27 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=3, contagem=23 
+[0] [1] [1] [1] [0] [1] [0] [1]  --> 117 
+
+Pagina --> id=4, contagem=22 
+[0] [1] [1] [0] [0] [1] [0] [1]  --> 101 
+
+Pagina --> id=5, contagem=23 
+[0] [1] [1] [1] [1] [0] [1] [1]  --> 123 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+0	1	0	0	0	0	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=1, contagem=23 
+[1] [0] [1] [1] [0] [1] [0] [0]  --> 180 
+
+Pagina --> id=2, contagem=27 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=3, contagem=23 
+[0] [0] [1] [1] [1] [0] [1] [0]  --> 58 
+
+Pagina --> id=4, contagem=22 
+[0] [0] [1] [1] [0] [0] [1] [0]  --> 50 
+
+Pagina --> id=5, contagem=23 
+[0] [0] [1] [1] [1] [1] [0] [1]  --> 61 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+0	1	1	0	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=1, contagem=24 
+[1] [1] [0] [1] [1] [0] [1] [0]  --> 218 
+
+Pagina --> id=2, contagem=28 
+[1] [0] [0] [0] [1] [0] [0] [0]  --> 136 
+
+Pagina --> id=3, contagem=23 
+[0] [0] [0] [1] [1] [1] [0] [1]  --> 29 
+
+Pagina --> id=4, contagem=23 
+[1] [0] [0] [1] [1] [0] [0] [1]  --> 153 
+
+Pagina --> id=5, contagem=23 
+[0] [0] [0] [1] [1] [1] [1] [0]  --> 30 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+0	1	0	0	0	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [0] [0] [0] [1] [0] [0] [0]  --> 8 
+
+Pagina --> id=1, contagem=25 
+[1] [1] [1] [0] [1] [1] [0] [1]  --> 237 
+
+Pagina --> id=2, contagem=28 
+[0] [1] [0] [0] [0] [1] [0] [0]  --> 68 
+
+Pagina --> id=3, contagem=23 
+[0] [0] [0] [0] [1] [1] [1] [0]  --> 14 
+
+Pagina --> id=4, contagem=23 
+[0] [1] [0] [0] [1] [1] [0] [0]  --> 76 
+
+Pagina --> id=5, contagem=23 
+[0] [0] [0] [0] [1] [1] [1] [1]  --> 15 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+1	1	0	0	1	0	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [0] [0] [0] [1] [0] [0]  --> 132 
+
+Pagina --> id=1, contagem=26 
+[1] [1] [1] [1] [0] [1] [1] [0]  --> 246 
+
+Pagina --> id=2, contagem=28 
+[0] [0] [1] [0] [0] [0] [1] [0]  --> 34 
+
+Pagina --> id=3, contagem=23 
+[0] [0] [0] [0] [0] [1] [1] [1]  --> 7 
+
+Pagina --> id=4, contagem=24 
+[1] [0] [1] [0] [0] [1] [1] [0]  --> 166 
+
+Pagina --> id=5, contagem=24 
+[1] [0] [0] [0] [0] [1] [1] [1]  --> 135 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+1	1	1	0	0	1	
+pagina sorteada id=4: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [0] [0] [0] [0] [1] [0]  --> 194 
+
+Pagina --> id=1, contagem=27 
+[1] [1] [1] [1] [1] [0] [1] [1]  --> 251 
+
+Pagina --> id=2, contagem=29 
+[1] [0] [0] [1] [0] [0] [0] [1]  --> 145 
+
+Pagina --> id=3, contagem=23 
+[0] [0] [0] [0] [0] [0] [1] [1]  --> 3 
+
+Pagina --> id=4, contagem=24 
+[0] [1] [0] [1] [0] [0] [1] [1]  --> 83 
+
+Pagina --> id=5, contagem=24 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+0	1	0	1	1	1	
+pagina sorteada id=4: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [1] [1] [0] [0] [0] [0] [1]  --> 97 
+
+Pagina --> id=1, contagem=28 
+[1] [1] [1] [1] [1] [1] [0] [1]  --> 253 
+
+Pagina --> id=2, contagem=29 
+[0] [1] [0] [0] [1] [0] [0] [0]  --> 72 
+
+Pagina --> id=3, contagem=24 
+[1] [0] [0] [0] [0] [0] [0] [1]  --> 129 
+
+Pagina --> id=4, contagem=25 
+[1] [0] [1] [0] [1] [0] [0] [1]  --> 169 
+
+Pagina --> id=5, contagem=25 
+[1] [0] [1] [0] [0] [0] [0] [1]  --> 161 
+
+MEMORIA REAL: 
+[5] [3] [2] [4] 
+
+*********BIT R************
+0	1	1	0	0	1	
+pagina sorteada id=1: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [1] [0] [0] [0] [0]  --> 48 
+
+Pagina --> id=1, contagem=29 
+[1] [1] [1] [1] [1] [1] [1] [0]  --> 254 
+
+Pagina --> id=2, contagem=30 
+[1] [0] [1] [0] [0] [1] [0] [0]  --> 164 
+
+Pagina --> id=3, contagem=24 
+[0] [1] [0] [0] [0] [0] [0] [0]  --> 64 
+
+Pagina --> id=4, contagem=25 
+[0] [1] [0] [1] [0] [1] [0] [0]  --> 84 
+
+Pagina --> id=5, contagem=26 
+[1] [1] [0] [1] [0] [0] [0] [0]  --> 208 
+
+MEMORIA REAL: 
+[5] [1] [2] [4] 
+
+*********BIT R************
+0	0	0	0	1	0	
+pagina sorteada id=4: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [0] [0] [1] [1] [0] [0] [0]  --> 24 
+
+Pagina --> id=1, contagem=29 
+[0] [1] [1] [1] [1] [1] [1] [1]  --> 127 
+
+Pagina --> id=2, contagem=30 
+[0] [1] [0] [1] [0] [0] [1] [0]  --> 82 
+
+Pagina --> id=3, contagem=24 
+[0] [0] [1] [0] [0] [0] [0] [0]  --> 32 
+
+Pagina --> id=4, contagem=26 
+[1] [0] [1] [0] [1] [0] [1] [0]  --> 170 
+
+Pagina --> id=5, contagem=26 
+[0] [1] [1] [0] [1] [0] [0] [0]  --> 104 
+
+MEMORIA REAL: 
+[5] [1] [2] [4] 
+
+*********BIT R************
+0	1	0	0	0	0	
+pagina sorteada id=0: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [0] [0] [0] [1] [1] [0] [0]  --> 12 
+
+Pagina --> id=1, contagem=30 
+[1] [0] [1] [1] [1] [1] [1] [1]  --> 191 
+
+Pagina --> id=2, contagem=30 
+[0] [0] [1] [0] [1] [0] [0] [1]  --> 41 
+
+Pagina --> id=3, contagem=24 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=4, contagem=26 
+[0] [1] [0] [1] [0] [1] [0] [1]  --> 85 
+
+Pagina --> id=5, contagem=26 
+[0] [0] [1] [1] [0] [1] [0] [0]  --> 52 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+0	1	0	1	1	1	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [0] [0] [0] [0] [1] [1] [0]  --> 6 
+
+Pagina --> id=1, contagem=31 
+[1] [1] [0] [1] [1] [1] [1] [1]  --> 223 
+
+Pagina --> id=2, contagem=30 
+[0] [0] [0] [1] [0] [1] [0] [0]  --> 20 
+
+Pagina --> id=3, contagem=25 
+[1] [0] [0] [0] [1] [0] [0] [0]  --> 136 
+
+Pagina --> id=4, contagem=27 
+[1] [0] [1] [0] [1] [0] [1] [0]  --> 170 
+
+Pagina --> id=5, contagem=27 
+[1] [0] [0] [1] [1] [0] [1] [0]  --> 154 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+0	0	1	0	0	1	
+pagina sorteada id=2: page miss 
+substituir página id=0 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [0] [0] [0] [0] [1] [1]  --> 3 
+
+Pagina --> id=1, contagem=31 
+[0] [1] [1] [0] [1] [1] [1] [1]  --> 111 
+
+Pagina --> id=2, contagem=31 
+[1] [0] [0] [0] [1] [0] [1] [0]  --> 138 
+
+Pagina --> id=3, contagem=25 
+[0] [1] [0] [0] [0] [1] [0] [0]  --> 68 
+
+Pagina --> id=4, contagem=27 
+[0] [1] [0] [1] [0] [1] [0] [1]  --> 85 
+
+Pagina --> id=5, contagem=28 
+[1] [1] [0] [0] [1] [1] [0] [1]  --> 205 
+
+MEMORIA REAL: 
+[5] [1] [2] [4] 
+
+*********BIT R************
+0	0	1	1	0	1	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [0] [0] [0] [0] [0] [1]  --> 1 
+
+Pagina --> id=1, contagem=31 
+[0] [0] [1] [1] [0] [1] [1] [1]  --> 55 
+
+Pagina --> id=2, contagem=32 
+[1] [1] [0] [0] [0] [1] [0] [1]  --> 197 
+
+Pagina --> id=3, contagem=26 
+[1] [0] [1] [0] [0] [0] [1] [0]  --> 162 
+
+Pagina --> id=4, contagem=27 
+[0] [0] [1] [0] [1] [0] [1] [0]  --> 42 
+
+Pagina --> id=5, contagem=29 
+[1] [1] [1] [0] [0] [1] [1] [0]  --> 230 
+
+MEMORIA REAL: 
+[5] [1] [2] [4] 
+
+*********BIT R************
+1	1	1	0	0	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=1, contagem=32 
+[1] [0] [0] [1] [1] [0] [1] [1]  --> 155 
+
+Pagina --> id=2, contagem=33 
+[1] [1] [1] [0] [0] [0] [1] [0]  --> 226 
+
+Pagina --> id=3, contagem=26 
+[0] [1] [0] [1] [0] [0] [0] [1]  --> 81 
+
+Pagina --> id=4, contagem=27 
+[0] [0] [0] [1] [0] [1] [0] [1]  --> 21 
+
+Pagina --> id=5, contagem=29 
+[0] [1] [1] [1] [0] [0] [1] [1]  --> 115 
+
+MEMORIA REAL: 
+[5] [1] [2] [4] 
+
+*********BIT R************
+0	1	0	1	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [0] [0] [0] [0] [0] [0]  --> 64 
+
+Pagina --> id=1, contagem=33 
+[1] [1] [0] [0] [1] [1] [0] [1]  --> 205 
+
+Pagina --> id=2, contagem=33 
+[0] [1] [1] [1] [0] [0] [0] [1]  --> 113 
+
+Pagina --> id=3, contagem=27 
+[1] [0] [1] [0] [1] [0] [0] [0]  --> 168 
+
+Pagina --> id=4, contagem=28 
+[1] [0] [0] [0] [1] [0] [1] [0]  --> 138 
+
+Pagina --> id=5, contagem=29 
+[0] [0] [1] [1] [1] [0] [0] [1]  --> 57 
+
+MEMORIA REAL: 
+[5] [1] [2] [4] 
+
+*********BIT R************
+0	1	0	0	0	1	
+pagina sorteada id=0: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [0] [0] [0] [0] [0]  --> 32 
+
+Pagina --> id=1, contagem=34 
+[1] [1] [1] [0] [0] [1] [1] [0]  --> 230 
+
+Pagina --> id=2, contagem=33 
+[0] [0] [1] [1] [1] [0] [0] [0]  --> 56 
+
+Pagina --> id=3, contagem=27 
+[0] [1] [0] [1] [0] [1] [0] [0]  --> 84 
+
+Pagina --> id=4, contagem=28 
+[0] [1] [0] [0] [0] [1] [0] [1]  --> 69 
+
+Pagina --> id=5, contagem=30 
+[1] [0] [0] [1] [1] [1] [0] [0]  --> 156 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+0	0	0	0	1	1	
+pagina sorteada id=2: page miss 
+substituir página id=1 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=1, contagem=34 
+[0] [1] [1] [1] [0] [0] [1] [1]  --> 115 
+
+Pagina --> id=2, contagem=33 
+[0] [0] [0] [1] [1] [1] [0] [0]  --> 28 
+
+Pagina --> id=3, contagem=27 
+[0] [0] [1] [0] [1] [0] [1] [0]  --> 42 
+
+Pagina --> id=4, contagem=29 
+[1] [0] [1] [0] [0] [0] [1] [0]  --> 162 
+
+Pagina --> id=5, contagem=31 
+[1] [1] [0] [0] [1] [1] [1] [0]  --> 206 
+
+MEMORIA REAL: 
+[5] [2] [0] [4] 
+
+*********BIT R************
+1	0	0	1	0	1	
+pagina sorteada id=1: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [0] [0] [1] [0] [0] [0]  --> 136 
+
+Pagina --> id=1, contagem=34 
+[0] [0] [1] [1] [1] [0] [0] [1]  --> 57 
+
+Pagina --> id=2, contagem=33 
+[0] [0] [0] [0] [1] [1] [1] [0]  --> 14 
+
+Pagina --> id=3, contagem=28 
+[1] [0] [0] [1] [0] [1] [0] [1]  --> 149 
+
+Pagina --> id=4, contagem=29 
+[0] [1] [0] [1] [0] [0] [0] [1]  --> 81 
+
+Pagina --> id=5, contagem=31 
+[0] [1] [1] [0] [0] [1] [1] [1]  --> 103 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+0	1	1	1	0	1	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [1] [0] [0] [0] [1] [0] [0]  --> 68 
+
+Pagina --> id=1, contagem=35 
+[1] [0] [0] [1] [1] [1] [0] [0]  --> 156 
+
+Pagina --> id=2, contagem=34 
+[1] [0] [0] [0] [0] [1] [1] [1]  --> 135 
+
+Pagina --> id=3, contagem=29 
+[1] [1] [0] [0] [1] [0] [1] [0]  --> 202 
+
+Pagina --> id=4, contagem=29 
+[0] [0] [1] [0] [1] [0] [0] [0]  --> 40 
+
+Pagina --> id=5, contagem=32 
+[1] [0] [1] [1] [0] [0] [1] [1]  --> 179 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	0	1	1	0	
+pagina sorteada id=2: page miss 
+substituir página id=4 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [1] [0] [0] [0] [1] [0]  --> 162 
+
+Pagina --> id=1, contagem=36 
+[1] [1] [0] [0] [1] [1] [1] [0]  --> 206 
+
+Pagina --> id=2, contagem=34 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=3, contagem=30 
+[1] [1] [1] [0] [0] [1] [0] [1]  --> 229 
+
+Pagina --> id=4, contagem=30 
+[1] [0] [0] [1] [0] [1] [0] [0]  --> 148 
+
+Pagina --> id=5, contagem=33 
+[1] [1] [0] [1] [1] [0] [0] [1]  --> 217 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+1	1	1	1	0	0	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [1] [0] [1] [0] [0] [0] [1]  --> 209 
+
+Pagina --> id=1, contagem=37 
+[1] [1] [1] [0] [0] [1] [1] [1]  --> 231 
+
+Pagina --> id=2, contagem=35 
+[1] [0] [1] [0] [0] [0] [0] [1]  --> 161 
+
+Pagina --> id=3, contagem=31 
+[1] [1] [1] [1] [0] [0] [1] [0]  --> 242 
+
+Pagina --> id=4, contagem=30 
+[0] [1] [0] [0] [1] [0] [1] [0]  --> 74 
+
+Pagina --> id=5, contagem=34 
+[1] [1] [1] [0] [1] [1] [0] [0]  --> 236 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+1	1	1	0	0	1	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [0] [1] [0] [0] [0]  --> 232 
+
+Pagina --> id=1, contagem=38 
+[1] [1] [1] [1] [0] [0] [1] [1]  --> 243 
+
+Pagina --> id=2, contagem=36 
+[1] [1] [0] [1] [0] [0] [0] [0]  --> 208 
+
+Pagina --> id=3, contagem=31 
+[0] [1] [1] [1] [1] [0] [0] [1]  --> 121 
+
+Pagina --> id=4, contagem=30 
+[0] [0] [1] [0] [0] [1] [0] [1]  --> 37 
+
+Pagina --> id=5, contagem=34 
+[0] [1] [1] [1] [0] [1] [1] [0]  --> 118 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+0	1	0	0	0	1	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [1] [1] [1] [0] [1] [0] [0]  --> 116 
+
+Pagina --> id=1, contagem=39 
+[1] [1] [1] [1] [1] [0] [0] [1]  --> 249 
+
+Pagina --> id=2, contagem=36 
+[0] [1] [1] [0] [1] [0] [0] [0]  --> 104 
+
+Pagina --> id=3, contagem=31 
+[0] [0] [1] [1] [1] [1] [0] [0]  --> 60 
+
+Pagina --> id=4, contagem=30 
+[0] [0] [0] [1] [0] [0] [1] [0]  --> 18 
+
+Pagina --> id=5, contagem=35 
+[1] [0] [1] [1] [1] [0] [1] [1]  --> 187 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+0	0	1	0	0	1	
+pagina sorteada id=3: page miss 
+substituir página id=0 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [1] [1] [0] [1] [0]  --> 58 
+
+Pagina --> id=1, contagem=39 
+[0] [1] [1] [1] [1] [1] [0] [0]  --> 124 
+
+Pagina --> id=2, contagem=37 
+[1] [0] [1] [1] [0] [1] [0] [0]  --> 180 
+
+Pagina --> id=3, contagem=31 
+[0] [0] [0] [1] [1] [1] [1] [0]  --> 30 
+
+Pagina --> id=4, contagem=30 
+[0] [0] [0] [0] [1] [0] [0] [1]  --> 9 
+
+Pagina --> id=5, contagem=36 
+[1] [1] [0] [1] [1] [1] [0] [1]  --> 221 
+
+MEMORIA REAL: 
+[5] [1] [3] [2] 
+
+*********BIT R************
+1	1	1	0	1	0	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [0] [1] [1] [1] [0] [1]  --> 157 
+
+Pagina --> id=1, contagem=40 
+[1] [0] [1] [1] [1] [1] [1] [0]  --> 190 
+
+Pagina --> id=2, contagem=38 
+[1] [1] [0] [1] [1] [0] [1] [0]  --> 218 
+
+Pagina --> id=3, contagem=31 
+[0] [0] [0] [0] [1] [1] [1] [1]  --> 15 
+
+Pagina --> id=4, contagem=31 
+[1] [0] [0] [0] [0] [1] [0] [0]  --> 132 
+
+Pagina --> id=5, contagem=37 
+[1] [1] [1] [0] [1] [1] [1] [0]  --> 238 
+
+MEMORIA REAL: 
+[5] [1] [3] [2] 
+
+*********BIT R************
+1	0	0	0	0	1	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [0] [0] [1] [1] [1] [0]  --> 206 
+
+Pagina --> id=1, contagem=40 
+[0] [1] [0] [1] [1] [1] [1] [1]  --> 95 
+
+Pagina --> id=2, contagem=38 
+[0] [1] [1] [0] [1] [1] [0] [1]  --> 109 
+
+Pagina --> id=3, contagem=31 
+[0] [0] [0] [0] [0] [1] [1] [1]  --> 7 
+
+Pagina --> id=4, contagem=31 
+[0] [1] [0] [0] [0] [0] [1] [0]  --> 66 
+
+Pagina --> id=5, contagem=37 
+[0] [1] [1] [1] [0] [1] [1] [1]  --> 119 
+
+MEMORIA REAL: 
+[5] [1] [3] [2] 
+
+*********BIT R************
+0	1	0	0	0	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=0 
+[0] [1] [1] [0] [0] [1] [1] [1]  --> 103 
+
+Pagina --> id=1, contagem=41 
+[1] [0] [1] [0] [1] [1] [1] [1]  --> 175 
+
+Pagina --> id=2, contagem=38 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=3, contagem=31 
+[0] [0] [0] [0] [0] [0] [1] [1]  --> 3 
+
+Pagina --> id=4, contagem=31 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=5, contagem=37 
+[0] [0] [1] [1] [1] [0] [1] [1]  --> 59 
+
+MEMORIA REAL: 
+[5] [1] [3] [2] 
+
+*********BIT R************
+0	0	0	0	0	1	
+pagina sorteada id=0: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [1] [0] [0] [1] [1]  --> 51 
+
+Pagina --> id=1, contagem=41 
+[0] [1] [0] [1] [0] [1] [1] [1]  --> 87 
+
+Pagina --> id=2, contagem=38 
+[0] [0] [0] [1] [1] [0] [1] [1]  --> 27 
+
+Pagina --> id=3, contagem=31 
+[0] [0] [0] [0] [0] [0] [0] [1]  --> 1 
+
+Pagina --> id=4, contagem=31 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=5, contagem=38 
+[1] [0] [0] [1] [1] [1] [0] [1]  --> 157 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+0	1	0	1	0	1	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [0] [1] [1] [0] [0] [1]  --> 25 
+
+Pagina --> id=1, contagem=42 
+[1] [0] [1] [0] [1] [0] [1] [1]  --> 171 
+
+Pagina --> id=2, contagem=38 
+[0] [0] [0] [0] [1] [1] [0] [1]  --> 13 
+
+Pagina --> id=3, contagem=32 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=4, contagem=31 
+[0] [0] [0] [0] [1] [0] [0] [0]  --> 8 
+
+Pagina --> id=5, contagem=39 
+[1] [1] [0] [0] [1] [1] [1] [0]  --> 206 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+1	1	0	0	0	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [0] [0] [0] [1] [1] [0] [0]  --> 140 
+
+Pagina --> id=1, contagem=43 
+[1] [1] [0] [1] [0] [1] [0] [1]  --> 213 
+
+Pagina --> id=2, contagem=38 
+[0] [0] [0] [0] [0] [1] [1] [0]  --> 6 
+
+Pagina --> id=3, contagem=32 
+[0] [1] [0] [0] [0] [0] [0] [0]  --> 64 
+
+Pagina --> id=4, contagem=31 
+[0] [0] [0] [0] [0] [1] [0] [0]  --> 4 
+
+Pagina --> id=5, contagem=39 
+[0] [1] [1] [0] [0] [1] [1] [1]  --> 103 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+0	0	1	0	1	1	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [1] [0] [0] [0] [1] [1] [0]  --> 70 
+
+Pagina --> id=1, contagem=43 
+[0] [1] [1] [0] [1] [0] [1] [0]  --> 106 
+
+Pagina --> id=2, contagem=39 
+[1] [0] [0] [0] [0] [0] [1] [1]  --> 131 
+
+Pagina --> id=3, contagem=32 
+[0] [0] [1] [0] [0] [0] [0] [0]  --> 32 
+
+Pagina --> id=4, contagem=32 
+[1] [0] [0] [0] [0] [0] [1] [0]  --> 130 
+
+Pagina --> id=5, contagem=40 
+[1] [0] [1] [1] [0] [0] [1] [1]  --> 179 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+1	1	0	1	1	0	
+pagina sorteada id=2: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [1] [0] [0] [0] [1] [1]  --> 163 
+
+Pagina --> id=1, contagem=44 
+[1] [0] [1] [1] [0] [1] [0] [1]  --> 181 
+
+Pagina --> id=2, contagem=39 
+[0] [1] [0] [0] [0] [0] [0] [1]  --> 65 
+
+Pagina --> id=3, contagem=33 
+[1] [0] [0] [1] [0] [0] [0] [0]  --> 144 
+
+Pagina --> id=4, contagem=33 
+[1] [1] [0] [0] [0] [0] [0] [1]  --> 193 
+
+Pagina --> id=5, contagem=41 
+[1] [1] [0] [1] [1] [0] [0] [1]  --> 217 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+0	0	0	0	1	0	
+pagina sorteada id=4: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [1] [0] [1] [0] [0] [0] [1]  --> 81 
+
+Pagina --> id=1, contagem=44 
+[0] [1] [0] [1] [1] [0] [1] [0]  --> 90 
+
+Pagina --> id=2, contagem=39 
+[0] [0] [1] [0] [0] [0] [0] [0]  --> 32 
+
+Pagina --> id=3, contagem=33 
+[0] [1] [0] [0] [1] [0] [0] [0]  --> 72 
+
+Pagina --> id=4, contagem=34 
+[1] [1] [1] [0] [0] [0] [0] [0]  --> 224 
+
+Pagina --> id=5, contagem=41 
+[0] [1] [1] [0] [1] [1] [0] [0]  --> 108 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	1	1	1	0	
+pagina sorteada id=4: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [0] [1] [0] [1] [0] [0] [0]  --> 168 
+
+Pagina --> id=1, contagem=45 
+[1] [0] [1] [0] [1] [1] [0] [1]  --> 173 
+
+Pagina --> id=2, contagem=40 
+[1] [0] [0] [1] [0] [0] [0] [0]  --> 144 
+
+Pagina --> id=3, contagem=34 
+[1] [0] [1] [0] [0] [1] [0] [0]  --> 164 
+
+Pagina --> id=4, contagem=35 
+[1] [1] [1] [1] [0] [0] [0] [0]  --> 240 
+
+Pagina --> id=5, contagem=42 
+[1] [0] [1] [1] [0] [1] [1] [0]  --> 182 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	0	1	1	1	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=2 
+[1] [1] [0] [1] [0] [1] [0] [0]  --> 212 
+
+Pagina --> id=1, contagem=46 
+[1] [1] [0] [1] [0] [1] [1] [0]  --> 214 
+
+Pagina --> id=2, contagem=40 
+[0] [1] [0] [0] [1] [0] [0] [0]  --> 72 
+
+Pagina --> id=3, contagem=35 
+[1] [1] [0] [1] [0] [0] [1] [0]  --> 210 
+
+Pagina --> id=4, contagem=36 
+[1] [1] [1] [1] [1] [0] [0] [0]  --> 248 
+
+Pagina --> id=5, contagem=42 
+[0] [1] [0] [1] [1] [0] [1] [1]  --> 91 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	0	1	0	1	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=2 
+[1] [1] [1] [0] [1] [0] [1] [0]  --> 234 
+
+Pagina --> id=1, contagem=46 
+[0] [1] [1] [0] [1] [0] [1] [1]  --> 107 
+
+Pagina --> id=2, contagem=41 
+[1] [0] [1] [0] [0] [1] [0] [0]  --> 164 
+
+Pagina --> id=3, contagem=35 
+[0] [1] [1] [0] [1] [0] [0] [1]  --> 105 
+
+Pagina --> id=4, contagem=37 
+[1] [1] [1] [1] [1] [1] [0] [0]  --> 252 
+
+Pagina --> id=5, contagem=42 
+[0] [0] [1] [0] [1] [1] [0] [1]  --> 45 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	0	0	1	0	0	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [1] [1] [1] [0] [1] [0] [1]  --> 245 
+
+Pagina --> id=1, contagem=46 
+[0] [0] [1] [1] [0] [1] [0] [1]  --> 53 
+
+Pagina --> id=2, contagem=41 
+[0] [1] [0] [1] [0] [0] [1] [0]  --> 82 
+
+Pagina --> id=3, contagem=36 
+[1] [0] [1] [1] [0] [1] [0] [0]  --> 180 
+
+Pagina --> id=4, contagem=37 
+[0] [1] [1] [1] [1] [1] [1] [0]  --> 126 
+
+Pagina --> id=5, contagem=43 
+[1] [0] [0] [1] [0] [1] [1] [0]  --> 150 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	1	0	0	1	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [1] [1] [0] [1] [0]  --> 250 
+
+Pagina --> id=1, contagem=47 
+[1] [0] [0] [1] [1] [0] [1] [0]  --> 154 
+
+Pagina --> id=2, contagem=42 
+[1] [0] [1] [0] [1] [0] [0] [1]  --> 169 
+
+Pagina --> id=3, contagem=36 
+[0] [1] [0] [1] [1] [0] [1] [0]  --> 90 
+
+Pagina --> id=4, contagem=37 
+[0] [0] [1] [1] [1] [1] [1] [1]  --> 63 
+
+Pagina --> id=5, contagem=43 
+[0] [1] [0] [0] [1] [0] [1] [1]  --> 75 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	1	0	0	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [1] [1] [1] [0] [1]  --> 253 
+
+Pagina --> id=1, contagem=48 
+[1] [1] [0] [0] [1] [1] [0] [1]  --> 205 
+
+Pagina --> id=2, contagem=43 
+[1] [1] [0] [1] [0] [1] [0] [0]  --> 212 
+
+Pagina --> id=3, contagem=36 
+[0] [0] [1] [0] [1] [1] [0] [1]  --> 45 
+
+Pagina --> id=4, contagem=37 
+[0] [0] [0] [1] [1] [1] [1] [1]  --> 31 
+
+Pagina --> id=5, contagem=43 
+[0] [0] [1] [0] [0] [1] [0] [1]  --> 37 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	0	0	0	0	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [1] [1] [1] [1] [0]  --> 254 
+
+Pagina --> id=1, contagem=48 
+[0] [1] [1] [0] [0] [1] [1] [0]  --> 102 
+
+Pagina --> id=2, contagem=43 
+[0] [1] [1] [0] [1] [0] [1] [0]  --> 106 
+
+Pagina --> id=3, contagem=36 
+[0] [0] [0] [1] [0] [1] [1] [0]  --> 22 
+
+Pagina --> id=4, contagem=37 
+[0] [0] [0] [0] [1] [1] [1] [1]  --> 15 
+
+Pagina --> id=5, contagem=43 
+[0] [0] [0] [1] [0] [0] [1] [0]  --> 18 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	1	0	1	1	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=2 
+[1] [1] [1] [1] [1] [1] [1] [1]  --> 255 
+
+Pagina --> id=1, contagem=49 
+[1] [0] [1] [1] [0] [0] [1] [1]  --> 179 
+
+Pagina --> id=2, contagem=44 
+[1] [0] [1] [1] [0] [1] [0] [1]  --> 181 
+
+Pagina --> id=3, contagem=36 
+[0] [0] [0] [0] [1] [0] [1] [1]  --> 11 
+
+Pagina --> id=4, contagem=38 
+[1] [0] [0] [0] [0] [1] [1] [1]  --> 135 
+
+Pagina --> id=5, contagem=43 
+[0] [0] [0] [0] [1] [0] [0] [1]  --> 9 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	1	0	0	0	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [1] [1] [1] [1] [1] [1] [1]  --> 255 
+
+Pagina --> id=1, contagem=50 
+[1] [1] [0] [1] [1] [0] [0] [1]  --> 217 
+
+Pagina --> id=2, contagem=45 
+[1] [1] [0] [1] [1] [0] [1] [0]  --> 218 
+
+Pagina --> id=3, contagem=36 
+[0] [0] [0] [0] [0] [1] [0] [1]  --> 5 
+
+Pagina --> id=4, contagem=38 
+[0] [1] [0] [0] [0] [0] [1] [1]  --> 67 
+
+Pagina --> id=5, contagem=44 
+[1] [0] [0] [0] [0] [1] [0] [0]  --> 132 
+
+MEMORIA REAL: 
+[5] [1] [0] [4] 
+
+*********BIT R************
+1	1	0	0	0	1	
+pagina sorteada id=2: page miss 
+substituir página id=4 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [1] [1] [1] [1] [1]  --> 255 
+
+Pagina --> id=1, contagem=51 
+[1] [1] [1] [0] [1] [1] [0] [0]  --> 236 
+
+Pagina --> id=2, contagem=45 
+[0] [1] [1] [0] [1] [1] [0] [1]  --> 109 
+
+Pagina --> id=3, contagem=36 
+[0] [0] [0] [0] [0] [0] [1] [0]  --> 2 
+
+Pagina --> id=4, contagem=38 
+[0] [0] [1] [0] [0] [0] [0] [1]  --> 33 
+
+Pagina --> id=5, contagem=44 
+[0] [1] [0] [0] [0] [0] [1] [0]  --> 66 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+0	0	0	0	0	1	
+pagina sorteada id=3: page miss 
+substituir página id=2 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [1] [1] [1] [1] [1] [1] [1]  --> 127 
+
+Pagina --> id=1, contagem=51 
+[0] [1] [1] [1] [0] [1] [1] [0]  --> 118 
+
+Pagina --> id=2, contagem=45 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=3, contagem=36 
+[0] [0] [0] [0] [0] [0] [0] [1]  --> 1 
+
+Pagina --> id=4, contagem=38 
+[0] [0] [0] [1] [0] [0] [0] [0]  --> 16 
+
+Pagina --> id=5, contagem=45 
+[1] [0] [1] [0] [0] [0] [0] [1]  --> 161 
+
+MEMORIA REAL: 
+[5] [1] [0] [3] 
+
+*********BIT R************
+0	0	1	1	1	0	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [0] [1] [1] [1] [1] [1] [1]  --> 63 
+
+Pagina --> id=1, contagem=51 
+[0] [0] [1] [1] [1] [0] [1] [1]  --> 59 
+
+Pagina --> id=2, contagem=46 
+[1] [0] [0] [1] [1] [0] [1] [1]  --> 155 
+
+Pagina --> id=3, contagem=37 
+[1] [0] [0] [0] [0] [0] [0] [0]  --> 128 
+
+Pagina --> id=4, contagem=39 
+[1] [0] [0] [0] [1] [0] [0] [0]  --> 136 
+
+Pagina --> id=5, contagem=45 
+[0] [1] [0] [1] [0] [0] [0] [0]  --> 80 
+
+MEMORIA REAL: 
+[5] [1] [0] [3] 
+
+*********BIT R************
+0	1	1	1	1	0	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=0 
+[0] [0] [0] [1] [1] [1] [1] [1]  --> 31 
+
+Pagina --> id=1, contagem=52 
+[1] [0] [0] [1] [1] [1] [0] [1]  --> 157 
+
+Pagina --> id=2, contagem=47 
+[1] [1] [0] [0] [1] [1] [0] [1]  --> 205 
+
+Pagina --> id=3, contagem=38 
+[1] [1] [0] [0] [0] [0] [0] [0]  --> 192 
+
+Pagina --> id=4, contagem=40 
+[1] [1] [0] [0] [0] [1] [0] [0]  --> 196 
+
+Pagina --> id=5, contagem=45 
+[0] [0] [1] [0] [1] [0] [0] [0]  --> 40 
+
+MEMORIA REAL: 
+[5] [1] [0] [3] 
+
+*********BIT R************
+1	1	0	0	0	0	
+pagina sorteada id=3: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[1] [0] [0] [0] [1] [1] [1] [1]  --> 143 
+
+Pagina --> id=1, contagem=53 
+[1] [1] [0] [0] [1] [1] [1] [0]  --> 206 
+
+Pagina --> id=2, contagem=47 
+[0] [1] [1] [0] [0] [1] [1] [0]  --> 102 
+
+Pagina --> id=3, contagem=38 
+[0] [1] [1] [0] [0] [0] [0] [0]  --> 96 
+
+Pagina --> id=4, contagem=40 
+[0] [1] [1] [0] [0] [0] [1] [0]  --> 98 
+
+Pagina --> id=5, contagem=46 
+[1] [0] [0] [1] [0] [1] [0] [0]  --> 148 
+
+MEMORIA REAL: 
+[5] [1] [0] [3] 
+
+*********BIT R************
+1	1	0	1	1	0	
+pagina sorteada id=5: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [1] [0] [0] [0] [1] [1] [1]  --> 199 
+
+Pagina --> id=1, contagem=54 
+[1] [1] [1] [0] [0] [1] [1] [1]  --> 231 
+
+Pagina --> id=2, contagem=47 
+[0] [0] [1] [1] [0] [0] [1] [1]  --> 51 
+
+Pagina --> id=3, contagem=39 
+[1] [0] [1] [1] [0] [0] [0] [0]  --> 176 
+
+Pagina --> id=4, contagem=41 
+[1] [0] [1] [1] [0] [0] [0] [1]  --> 177 
+
+Pagina --> id=5, contagem=47 
+[1] [1] [0] [0] [1] [0] [1] [0]  --> 202 
+
+MEMORIA REAL: 
+[5] [1] [0] [3] 
+
+*********BIT R************
+1	1	0	1	0	1	
+pagina sorteada id=1: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=2 
+[1] [1] [1] [0] [0] [0] [1] [1]  --> 227 
+
+Pagina --> id=1, contagem=55 
+[1] [1] [1] [1] [0] [0] [1] [1]  --> 243 
+
+Pagina --> id=2, contagem=47 
+[0] [0] [0] [1] [1] [0] [0] [1]  --> 25 
+
+Pagina --> id=3, contagem=40 
+[1] [1] [0] [1] [1] [0] [0] [0]  --> 216 
+
+Pagina --> id=4, contagem=41 
+[0] [1] [0] [1] [1] [0] [0] [0]  --> 88 
+
+Pagina --> id=5, contagem=47 
+[0] [1] [1] [0] [0] [1] [0] [1]  --> 101 
+
+MEMORIA REAL: 
+[5] [1] [0] [3] 
+
+*********BIT R************
+1	0	0	0	1	0	
+pagina sorteada id=2: page miss 
+substituir página id=3 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[1] [1] [1] [1] [0] [0] [0] [1]  --> 241 
+
+Pagina --> id=1, contagem=55 
+[0] [1] [1] [1] [1] [0] [0] [1]  --> 121 
+
+Pagina --> id=2, contagem=47 
+[0] [0] [0] [0] [1] [1] [0] [0]  --> 12 
+
+Pagina --> id=3, contagem=40 
+[0] [1] [1] [0] [1] [1] [0] [0]  --> 108 
+
+Pagina --> id=4, contagem=42 
+[1] [0] [1] [0] [1] [1] [0] [0]  --> 172 
+
+Pagina --> id=5, contagem=48 
+[1] [0] [1] [1] [0] [0] [1] [0]  --> 178 
+
+MEMORIA REAL: 
+[5] [1] [0] [2] 
+
+*********BIT R************
+0	0	1	0	1	1	
+pagina sorteada id=3: page miss 
+substituir página id=1 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=1, contagem=1 
+[0] [1] [1] [1] [1] [0] [0] [0]  --> 120 
+
+Pagina --> id=1, contagem=55 
+[0] [0] [1] [1] [1] [1] [0] [0]  --> 60 
+
+Pagina --> id=2, contagem=48 
+[1] [0] [0] [0] [0] [1] [1] [0]  --> 134 
+
+Pagina --> id=3, contagem=40 
+[0] [0] [1] [1] [0] [1] [1] [0]  --> 54 
+
+Pagina --> id=4, contagem=43 
+[1] [1] [0] [1] [0] [1] [1] [0]  --> 214 
+
+Pagina --> id=5, contagem=49 
+[1] [1] [0] [1] [1] [0] [0] [1]  --> 217 
+
+MEMORIA REAL: 
+[5] [3] [0] [2] 
+
+*********BIT R************
+0	1	1	1	0	1	
+pagina sorteada id=0: nao ocorreu page miss 
+
+MEMORIA VIRTUAL: 
+Pagina --> id=0, contagem=1 
+[0] [0] [1] [1] [1] [1] [0] [0]  --> 60 
+
+Pagina --> id=1, contagem=56 
+[1] [0] [0] [1] [1] [1] [1] [0]  --> 158 
+
+Pagina --> id=2, contagem=49 
+[1] [1] [0] [0] [0] [0] [1] [1]  --> 195 
+
+Pagina --> id=3, contagem=41 
+[1] [0] [0] [1] [1] [0] [1] [1]  --> 155 
+
+Pagina --> id=4, contagem=43 
+[0] [1] [1] [0] [1] [0] [1] [1]  --> 107 
+
+Pagina --> id=5, contagem=50 
+[1] [1] [1] [0] [1] [1] [0] [0]  --> 236 
+
+MEMORIA REAL: 
+[5] [3] [0] [2] 
+

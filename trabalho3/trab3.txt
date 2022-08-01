@@ -1,0 +1,748 @@
+
+página sorteada id=7: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=7, contagem=1 
+id=1, contagem=0 
+id=2, contagem=0 
+id=3, contagem=0 
+
+página sorteada id=6: page miss 
+substituir página id=1 
+MEMÓRIA: 
+id=7, contagem=1 
+id=6, contagem=1 
+id=2, contagem=0 
+id=3, contagem=0 
+
+página sorteada id=1: page miss 
+substituir página id=2 
+MEMÓRIA: 
+id=7, contagem=1 
+id=6, contagem=1 
+id=1, contagem=1 
+id=3, contagem=0 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=1 
+id=6, contagem=1 
+id=1, contagem=1 
+id=3, contagem=1 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=1 
+id=6, contagem=1 
+id=1, contagem=2 
+id=3, contagem=1 
+
+página sorteada id=7: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=2 
+id=6, contagem=1 
+id=1, contagem=2 
+id=3, contagem=1 
+
+página sorteada id=2: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=7, contagem=2 
+id=2, contagem=1 
+id=1, contagem=2 
+id=3, contagem=1 
+
+página sorteada id=4: page miss 
+substituir página id=2 
+MEMÓRIA: 
+id=7, contagem=2 
+id=4, contagem=1 
+id=1, contagem=2 
+id=3, contagem=1 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=2 
+id=4, contagem=1 
+id=1, contagem=3 
+id=3, contagem=1 
+
+página sorteada id=5: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=7, contagem=2 
+id=5, contagem=1 
+id=1, contagem=3 
+id=3, contagem=1 
+
+página sorteada id=2: page miss 
+substituir página id=5 
+MEMÓRIA: 
+id=7, contagem=2 
+id=2, contagem=1 
+id=1, contagem=3 
+id=3, contagem=1 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=2 
+id=2, contagem=1 
+id=1, contagem=3 
+id=3, contagem=2 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=2 
+id=2, contagem=2 
+id=1, contagem=3 
+id=3, contagem=2 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=2 
+id=2, contagem=2 
+id=1, contagem=3 
+id=3, contagem=3 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=2 
+id=2, contagem=2 
+id=1, contagem=3 
+id=3, contagem=4 
+
+página sorteada id=6: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=2 
+id=1, contagem=3 
+id=3, contagem=4 
+
+página sorteada id=4: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=2 
+id=1, contagem=3 
+id=3, contagem=4 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=4 
+
+página sorteada id=4: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=2 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=4 
+
+página sorteada id=0: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=4 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=5 
+
+página sorteada id=0: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=2 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=5 
+
+página sorteada id=7: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=5 
+
+página sorteada id=5: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=5, contagem=1 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=5 
+
+página sorteada id=6: page miss 
+substituir página id=5 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=3 
+id=1, contagem=3 
+id=3, contagem=5 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=4 
+id=1, contagem=3 
+id=3, contagem=5 
+
+página sorteada id=6: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=2 
+id=2, contagem=4 
+id=1, contagem=3 
+id=3, contagem=5 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=2 
+id=2, contagem=4 
+id=1, contagem=3 
+id=3, contagem=6 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=2 
+id=2, contagem=4 
+id=1, contagem=3 
+id=3, contagem=7 
+
+página sorteada id=7: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=4 
+id=1, contagem=3 
+id=3, contagem=7 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=4 
+id=1, contagem=4 
+id=3, contagem=7 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=5 
+id=1, contagem=4 
+id=3, contagem=7 
+
+página sorteada id=6: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=5 
+id=1, contagem=4 
+id=3, contagem=7 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=6 
+id=1, contagem=4 
+id=3, contagem=7 
+
+página sorteada id=5: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=5, contagem=1 
+id=2, contagem=6 
+id=1, contagem=4 
+id=3, contagem=7 
+
+página sorteada id=7: page miss 
+substituir página id=5 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=6 
+id=1, contagem=4 
+id=3, contagem=7 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=6 
+id=1, contagem=5 
+id=3, contagem=7 
+
+página sorteada id=0: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=6 
+id=1, contagem=5 
+id=3, contagem=7 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=6 
+id=1, contagem=5 
+id=3, contagem=8 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=7 
+id=1, contagem=5 
+id=3, contagem=8 
+
+página sorteada id=5: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=5, contagem=1 
+id=2, contagem=7 
+id=1, contagem=5 
+id=3, contagem=8 
+
+página sorteada id=5: não ocorreu page miss 
+MEMÓRIA: 
+id=5, contagem=2 
+id=2, contagem=7 
+id=1, contagem=5 
+id=3, contagem=8 
+
+página sorteada id=5: não ocorreu page miss 
+MEMÓRIA: 
+id=5, contagem=3 
+id=2, contagem=7 
+id=1, contagem=5 
+id=3, contagem=8 
+
+página sorteada id=7: page miss 
+substituir página id=5 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=7 
+id=1, contagem=5 
+id=3, contagem=8 
+
+página sorteada id=0: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=7 
+id=1, contagem=5 
+id=3, contagem=8 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=7 
+id=1, contagem=6 
+id=3, contagem=8 
+
+página sorteada id=6: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=7 
+id=1, contagem=6 
+id=3, contagem=8 
+
+página sorteada id=4: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=7 
+id=1, contagem=6 
+id=3, contagem=8 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=7 
+id=1, contagem=6 
+id=3, contagem=9 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=8 
+id=1, contagem=6 
+id=3, contagem=9 
+
+página sorteada id=5: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=5, contagem=1 
+id=2, contagem=8 
+id=1, contagem=6 
+id=3, contagem=9 
+
+página sorteada id=6: page miss 
+substituir página id=5 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=8 
+id=1, contagem=6 
+id=3, contagem=9 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=8 
+id=1, contagem=6 
+id=3, contagem=10 
+
+página sorteada id=4: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=8 
+id=1, contagem=6 
+id=3, contagem=10 
+
+página sorteada id=4: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=2 
+id=2, contagem=8 
+id=1, contagem=6 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=2 
+id=2, contagem=8 
+id=1, contagem=7 
+id=3, contagem=10 
+
+página sorteada id=6: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=8 
+id=1, contagem=7 
+id=3, contagem=10 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=9 
+id=1, contagem=7 
+id=3, contagem=10 
+
+página sorteada id=4: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=9 
+id=1, contagem=7 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=9 
+id=1, contagem=8 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=9 
+id=1, contagem=9 
+id=3, contagem=10 
+
+página sorteada id=5: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=5, contagem=1 
+id=2, contagem=9 
+id=1, contagem=9 
+id=3, contagem=10 
+
+página sorteada id=4: page miss 
+substituir página id=5 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=9 
+id=1, contagem=9 
+id=3, contagem=10 
+
+página sorteada id=7: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=9 
+id=1, contagem=9 
+id=3, contagem=10 
+
+página sorteada id=0: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=9 
+id=1, contagem=9 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=9 
+id=1, contagem=10 
+id=3, contagem=10 
+
+página sorteada id=6: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=9 
+id=1, contagem=10 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=9 
+id=1, contagem=11 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=9 
+id=1, contagem=12 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=9 
+id=1, contagem=13 
+id=3, contagem=10 
+
+página sorteada id=4: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=9 
+id=1, contagem=13 
+id=3, contagem=10 
+
+página sorteada id=7: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=9 
+id=1, contagem=13 
+id=3, contagem=10 
+
+página sorteada id=6: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=9 
+id=1, contagem=13 
+id=3, contagem=10 
+
+página sorteada id=1: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=9 
+id=1, contagem=14 
+id=3, contagem=10 
+
+página sorteada id=6: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=2 
+id=2, contagem=9 
+id=1, contagem=14 
+id=3, contagem=10 
+
+página sorteada id=7: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=9 
+id=1, contagem=14 
+id=3, contagem=10 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=10 
+id=1, contagem=14 
+id=3, contagem=10 
+
+página sorteada id=4: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=10 
+id=1, contagem=14 
+id=3, contagem=10 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=10 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=6: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=10 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=7: page miss 
+substituir página id=6 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=10 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=0: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=10 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=4: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=10 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=11 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=4: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=2 
+id=2, contagem=11 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=0: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=11 
+id=1, contagem=14 
+id=3, contagem=11 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=11 
+id=1, contagem=14 
+id=3, contagem=12 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=11 
+id=1, contagem=14 
+id=3, contagem=13 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=13 
+
+página sorteada id=7: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=7, contagem=1 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=13 
+
+página sorteada id=4: page miss 
+substituir página id=7 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=13 
+
+página sorteada id=4: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=2 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=13 
+
+página sorteada id=4: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=3 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=13 
+
+página sorteada id=0: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=13 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=0, contagem=1 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=14 
+
+página sorteada id=4: page miss 
+substituir página id=0 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=12 
+id=1, contagem=14 
+id=3, contagem=14 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=13 
+id=1, contagem=14 
+id=3, contagem=14 
+
+página sorteada id=2: não ocorreu page miss 
+MEMÓRIA: 
+id=4, contagem=1 
+id=2, contagem=14 
+id=1, contagem=14 
+id=3, contagem=14 
+
+página sorteada id=6: page miss 
+substituir página id=4 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=14 
+id=1, contagem=14 
+id=3, contagem=14 
+
+página sorteada id=3: não ocorreu page miss 
+MEMÓRIA: 
+id=6, contagem=1 
+id=2, contagem=14 
+id=1, contagem=14 
+id=3, contagem=15 
